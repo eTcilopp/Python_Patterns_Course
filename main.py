@@ -1,3 +1,6 @@
+from tempalator import render
+
+
 def index_view(request):
     print(request)
     return '200 OK', [b'Index']
@@ -5,13 +8,14 @@ def index_view(request):
 
 def abc_view(request):
     print(request)
-    return '200 OK', [b'ABC']
-
+    output = render('test_page.html', object_list=[request])
+    return '200 OK', [bytes(output, 'utf-8')]
 
 class Other:
     def __call__(self, request):
         print(request)
-        return '200 OK', [b'<h1>Other</h1>']
+        output = render('test_page.html', object_list=['Polina', 'Nadya', 'Kostya', 'Buddah'])
+        return '200 OK', [bytes(output, 'utf-8')]
 
 
 def not_found_404_view(request):
