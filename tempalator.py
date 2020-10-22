@@ -8,5 +8,6 @@ def render(template_name, **kwargs):
 
 
 if __name__ == '__main__':
-    output_test = render('test_page.html', object_list=[{'name': 'Leo'}, {'name': 'Kate'}])
-    print (output_test)
+    output_test = render('templates/mainapp/test_page.html', object_list=[
+                         {'name': 'Leo'}, {'name': 'Kate'}])
+    print(output_test)

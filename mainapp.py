@@ -11,10 +11,17 @@ def abc_view(request):
     output = render('test_page.html', object_list=[request])
     return '200 OK', [bytes(output, 'utf-8')]
 
+
 class Other:
     def __call__(self, request):
         print(request)
-        output = render('test_page.html', object_list=['Polina', 'Nadya', 'Kostya', 'Buddah'])
+        output = render(
+            'templates/mainapp/test_page.html',
+            object_list=[
+                'Polina',
+                'Nadya',
+                'Kostya',
+                'Buddah'])
         return '200 OK', [bytes(output, 'utf-8')]
 
 
