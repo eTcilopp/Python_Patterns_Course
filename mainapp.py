@@ -1,49 +1,8 @@
-from tempalator import render
-
-
-def index_view(request):
-    print(request)
-    return '200 OK', [b'Index']
-
-
-def abc_view(request):
-    print(request)
-    output = render('test_page.html', object_list=[request])
-    return '200 OK', [bytes(output, 'utf-8')]
-
-
-class Other:
-    def __call__(self, request):
-        print(request)
-        output = render(
-            'templates/mainapp/test_page.html',
-            object_list=[
-                'Polina',
-                'Nadya',
-                'Kostya',
-                'Buddah'])
-        return '200 OK', [bytes(output, 'utf-8')]
-
-
-def not_found_404_view(request):
-    print(request)
-    return '404 WHAT', [b'404 PAGE Not Found']
-
-
-class SecretFront:
-    def __call__(self, request):
-        request['secret'] = 'some secret'
-
-
-class OtherFront:
-    def __call__(self, request):
-        request['key'] = 'key'
-
+from views import *
 
 routes = {
-    '/': index_view,
-    '/abc/': abc_view,
-    '/other/': Other()
+    '/': IndexView(),
+    '/about/': AboutView()
 }
 
 fronts = [SecretFront(), OtherFront()]
@@ -63,11 +22,12 @@ class Application:
         """
 
         path = environ['PATH_INFO']
-        view = not_found_404_view
+        view = NotFound404()
+
         if path[-1] != '/':
             path += '/'
+
         if path in self.routes:
-            print(path)
             view = self.routes[path]
 
         request = {}
