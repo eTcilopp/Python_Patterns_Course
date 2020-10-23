@@ -1,15 +1,41 @@
+from pathlib import Path
 from tempalator import render
+
+template_folder = Path('templates/mainapp/')
 
 
 class IndexView:
     def __call__(self, request):
-        output = render('templates/mainapp/index.html', object_list=[])
+        title = 'Index'
+        output = render(
+            template_folder / 'index.html',
+            title=title,
+            object_list=[
+                'cat',
+                'dog',
+                'horse',
+                'fish',
+                'llama',
+                'Polina'])
         return '200 OK', [bytes(output, 'utf-8')]
 
 
 class AboutView:
     def __call__(self, request):
-        output = render('templates/mainapp/about.html', object_list=[])
+        title = 'About'
+        output = render(
+            template_folder / 'about.html',
+            title=title,
+            object_list=[
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9])
         return '200 OK', [bytes(output, 'utf-8')]
 
 
