@@ -8,9 +8,30 @@
 <a href="/">Index</a>
    <ul>
         <h1> {{ title }} </h1>
-        {% for object in object_list %}
-            <li> {{object}} </li>
-        {% endfor %}
+
+       <div>
+           <h2>POST Method</h2>
+           <form action="#" method="post" id="post">
+               <label for="fname">First name:</label>
+               <input type="text" id="fname" name="fname">
+               <br>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email">
+               <br>
+               <textarea rows="4" cols="50" name="Comment" form="post"></textarea>
+               <br><br>
+               <input type="submit" value="Submit">
+           </form>
+        </div>
+       <div>
+           <h2>GET Method</h2>
+           <form action="#" method="get">
+               <label for="fname">Last name:</label>
+               <input type="text" id="lname" name="lname">
+               <input type="submit" value="Submit">
+               <br><br>
+            </form>
+       </div>
    </ul>
 </body >
 </html>

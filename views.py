@@ -1,5 +1,5 @@
 from pathlib import Path
-from tempalator import render
+from my_framework.tempalator import render
 
 template_folder = Path('templates/mainapp/')
 
