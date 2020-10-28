@@ -24,9 +24,15 @@ def parse_input_data(data):
 
 
 def get_wsgi_input_data(env):
+    """
+    Извлечение запроса, отправленного методом POST
+    :param env: запрос
+    :return: словарь с текстом запроса
+    """
     content_length_data = env.get('CONTENT_LENGTH')
     content_length = int(content_length_data) if content_length_data else 0
-    data = env['wsgi.input'].read(content_length) if content_length > 0 else b''
+    data = env['wsgi.input'].read(
+        content_length) if content_length > 0 else b''
     return data
 
 

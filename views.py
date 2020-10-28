@@ -26,16 +26,7 @@ class AboutView:
         output = render(
             template_folder / 'about.html',
             title=title,
-            object_list=[
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9])
+            object_list=[])
         return '200 OK', [bytes(output, 'utf-8')]
 
 
