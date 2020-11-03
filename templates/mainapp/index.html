@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <title> {{ title }} </title >
-</head>
-<a href="/about/">About</a>
-<body>
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
    <ul>
         <h1> {{ title }} </h1>
         {% for object in object_list %}
             <li> {{object}} </li>
         {% endfor %}
    </ul>
-</body >
-</html>
+{% endblock %}
+
+

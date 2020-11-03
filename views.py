@@ -1,14 +1,11 @@
 from pathlib import Path
 from my_framework.tempalator import render
 
-template_folder = Path('templates/mainapp/')
-
 
 class IndexView:
     def __call__(self, request):
         title = 'Index'
-        output = render(
-            template_folder / 'index.html',
+        output = render('index.html',
             title=title,
             object_list=[
                 'cat',
@@ -23,8 +20,7 @@ class IndexView:
 class AboutView:
     def __call__(self, request):
         title = 'About'
-        output = render(
-            template_folder / 'about.html',
+        output = render('about.html',
             title=title,
             object_list=[])
         return '200 OK', [bytes(output, 'utf-8')]
