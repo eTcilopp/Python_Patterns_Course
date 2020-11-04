@@ -1,0 +1,17 @@
+html, body {
+	height: 100%;
+}
+
+.container {
+	min-height: 100%
+}
+
+.footer {
+	height: 200px;
+	width:	1200px;
+	margin: -200px auto 0;
+}
+
+.clr {
+	height:	200px;
+}
