@@ -1,6 +1,8 @@
 from pathlib import Path
 from my_framework.tempalator import render
 
+from models import categories_list, courses_list
+
 
 class IndexView:
     def __call__(self, request):
@@ -23,6 +25,22 @@ class AboutView:
         output = render('about.html',
             title=title,
             object_list=[])
+        return '200 OK', [bytes(output, 'utf-8')]
+
+class CategoriesView:
+    def __call__(self, request):
+        title = 'Categories'
+        output = render('categories.html',
+            title=title,
+            object_list=categories_list)
+        return '200 OK', [bytes(output, 'utf-8')]
+
+class CoursesView:
+    def __call__(self, request):
+        title = 'Courses'
+        output = render('courses.html',
+            title=title,
+            object_list={'courses_list': courses_list, 'categories_list': categories_list})
         return '200 OK', [bytes(output, 'utf-8')]
 
 

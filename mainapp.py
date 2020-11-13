@@ -1,8 +1,12 @@
+import re
 from views import *
+from models import CourseFactory
 
 routes = {
     '/': IndexView(),
-    '/about/': AboutView()
+    '/about/': AboutView(),
+    '/categories/': CategoriesView(),
+    '/courses/': CoursesView()
 }
 
 fronts = [SecretFront(), OtherFront()]
@@ -70,7 +74,12 @@ class Application:
             print('method: ', method)
             data = get_wsgi_input_data(environ)
             data = parse_wsgi_input_data(data)
-            print(data)
+            if 'createcategory' in data and data['createcategory'] not in categories_list:
+                categories_list.append(data['createcategory'])
+            if 'newcoursename' in data:
+                newCourse = CourseFactory.get_course(data['newcoursetype'], data['newcoursename'], data['newcoursecategory'])
+                courses_list.append(newCourse)
+            print(data) #TODO - remove
 
         view = NotFound404()
 
