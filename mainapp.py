@@ -9,6 +9,11 @@ routes = {
     '/courses/': CoursesView()
 }
 
+# TODO - переделай, чтобы все было на RegEx
+re_routes = {
+    '^\/course\/\w*': CourseView()
+}
+
 fronts = [SecretFront(), OtherFront()]
 
 
@@ -51,6 +56,7 @@ def parse_wsgi_input_data(data: bytes) -> dict:
 class Application:
     def __init__(self, routes, fronts):
         self.routes = routes
+        self.re_routes = re_routes
         self.fronts = fronts
 
     def __call__(self, environ, start_response):
@@ -88,8 +94,14 @@ class Application:
 
         if path in self.routes:
             view = self.routes[path]
+        else:
+            for route in self.re_routes:
+                rex = re.compile(route)
+                if rex.match(path):
+                    view = self.re_routes[route]
+                    break
 
-        request = {}
+        request = {'path': path}
 
         for front in self.fronts:
             front(request)

@@ -3,19 +3,17 @@ from abc import ABCMeta, abstractmethod
 categories_list = []
 courses_list = []
 
+
 class Course(metaclass=ABCMeta):
 
-    @abstractmethod
     def get_courseName(self):
-        pass
+        return {'Course name': self.courseName}
 
-    @abstractmethod
-    def get_courseCategory(self):
-        pass
-
-    @abstractmethod
     def get_courseType(self):
-        pass
+        return {'Course Type': self.courseType}
+
+    def get_courseCategory(self):
+        return {'Course Category': self.courseCategory}
 
 
 class OnlineCourse(Course):
@@ -25,15 +23,6 @@ class OnlineCourse(Course):
         self.courseName = courseName
         self.courseCategory = courseCategory
 
-    def get_courseName(self):
-        return {'Course name': self.courseName}
-
-    def get_courseType(self):
-        return {'Course Type': self.courseType}
-
-    def get_courseCategory(self):
-        return {'Course Category': self.courseCategory}
-
 
 class InClassCourse(Course):
 
@@ -42,14 +31,6 @@ class InClassCourse(Course):
         self.courseName = courseName
         self.courseCategory = courseCategory
 
-    def get_courseName(self):
-        return {'Course name': self.courseName}
-
-    def get_courseType(self):
-        return {'Course Type': self.courseType}
-
-    def get_courseCategory(self):
-        return {'Course Category': self.courseCategory}
 
 class CourseFactory:
     @staticmethod

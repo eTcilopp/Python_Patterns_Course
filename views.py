@@ -44,6 +44,17 @@ class CoursesView:
         return '200 OK', [bytes(output, 'utf-8')]
 
 
+class CourseView:
+    def __call__(self, request):
+        title = 'Course!'
+        course = request['path'][8:-1]
+        print(request) #TODO - remove Print
+        output = render('course.html',
+            title=title,
+            object_list={'course': course})
+        return '200 OK', [bytes(output, 'utf-8')]
+
+
 class NotFound404:
     def __call__(self, request):
         return '404 OK', [b'404: page not fond']
@@ -56,4 +67,4 @@ class SecretFront:
 
 class OtherFront:
     def __call__(self, request):
-        request['key'] = 'key'
+        request['course'] = 'key'
