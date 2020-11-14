@@ -1,0 +1,30 @@
+INFO       2020-11-14 16:43:53,310 Started Logging
+INFO       2020-11-14 16:44:02,353 Processed path: /
+INFO       2020-11-14 16:44:03,214 Processed path: /about/
+INFO       2020-11-14 16:44:04,024 Processed path: /categories/
+INFO       2020-11-14 16:44:08,746 Created new category: Jazz
+INFO       2020-11-14 16:44:08,746 Processed path: /categories/
+INFO       2020-11-14 16:44:09,798 Processed path: /courses/
+INFO       2020-11-14 16:44:16,423 Created new course: Piano
+INFO       2020-11-14 16:44:16,423 Processed path: /courses/
+INFO       2020-11-14 16:44:17,513 Processed path: /course/Piano/
+INFO       2020-11-14 16:46:25,735 Started Logging
+INFO       2020-11-14 16:46:29,248 Processed path: /
+INFO       2020-11-14 16:46:30,041 Processed path: /about/
+INFO       2020-11-14 16:46:30,762 Processed path: /categories/
+INFO       2020-11-14 16:46:31,410 Processed path: /courses/
+INFO       2020-11-14 16:46:31,994 Processed path: /categories/
+INFO       2020-11-14 16:46:35,569 Created new category: Jazz
+INFO       2020-11-14 16:46:35,570 Processed path: /categories/
+INFO       2020-11-14 16:46:36,290 Processed path: /courses/
+INFO       2020-11-14 16:46:42,501 Created new course: Piano
+INFO       2020-11-14 16:46:42,502 Processed path: /courses/
+INFO       2020-11-14 16:46:43,697 Processed path: /course/Piano/
+INFO       2020-11-14 16:46:53,079 Processed path: /categories/
+INFO       2020-11-14 16:46:59,025 Created new category: Box
+INFO       2020-11-14 16:46:59,026 Processed path: /categories/
+INFO       2020-11-14 16:47:01,242 Processed path: /courses/
+INFO       2020-11-14 16:47:11,390 Created new course: Swing
+INFO       2020-11-14 16:47:11,391 Processed path: /courses/
+INFO       2020-11-14 16:47:24,620 Processed path: /course/Piano/
+INFO       2020-11-14 16:47:33,531 Processed path: /courses/
