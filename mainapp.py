@@ -1,17 +1,24 @@
 import re
+import logging
 from views import *
 from models import CourseFactory
 
+# simple logging setup
+# to log an event do: logging.info(f'Event {variable}')
+logging.basicConfig(
+    filename=f'logs/{__name__}.log',
+    format='%(levelname)-10s %(asctime)s %(message)s',
+    level=logging.INFO
+)
+logging.info('Started Logging')
+
+
 routes = {
-    '/': IndexView(),
+    '^/$': IndexView(),
     '/about/': AboutView(),
     '/categories/': CategoriesView(),
-    '/courses/': CoursesView()
-}
-
-# TODO - переделай, чтобы все было на RegEx
-re_routes = {
-    '^\/course\/\w*': CourseView()
+    '/courses/': CoursesView(),
+    '^/course/\w*': CourseView(),
 }
 
 fronts = [SecretFront(), OtherFront()]
@@ -56,7 +63,6 @@ def parse_wsgi_input_data(data: bytes) -> dict:
 class Application:
     def __init__(self, routes, fronts):
         self.routes = routes
-        self.re_routes = re_routes
         self.fronts = fronts
 
     def __call__(self, environ, start_response):
@@ -82,24 +88,25 @@ class Application:
             data = parse_wsgi_input_data(data)
             if 'createcategory' in data and data['createcategory'] not in categories_list:
                 categories_list.append(data['createcategory'])
+                logging.info(f'Created new category: {data["createcategory"]}')
             if 'newcoursename' in data:
-                newCourse = CourseFactory.get_course(data['newcoursetype'], data['newcoursename'], data['newcoursecategory'])
+                newCourse = CourseFactory.get_course(data['newcoursetype'], data['newcoursename'],
+                                                     data['newcoursecategory'])
                 courses_list.append(newCourse)
-            print(data) #TODO - remove
+                logging.info(f'Created new course: {newCourse.courseName}')
+            print(data)  # TODO - remove
 
         view = NotFound404()
 
         if path[-1] != '/':
             path += '/'
 
-        if path in self.routes:
-            view = self.routes[path]
-        else:
-            for route in self.re_routes:
-                rex = re.compile(route)
-                if rex.match(path):
-                    view = self.re_routes[route]
-                    break
+        for route in self.routes:
+            rex = re.compile(route)
+            if rex.match(path):
+                view = self.routes[route]
+                logging.info(f'Processed path: {path}')
+                break
 
         request = {'path': path}
 
