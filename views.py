@@ -3,6 +3,13 @@ from my_framework.tempalator import render
 
 from models import categories_list, courses_list
 
+routes = {}
+
+def app(url):
+    def decorator(cls):
+        routes.update({url: cls})
+        return cls
+    return decorator
 
 def debug(cls):
     '''
@@ -14,7 +21,7 @@ def debug(cls):
     def decorated_call(fn):
         def new_call(*args, **kwargs):
             print(
-                f'Method from {cls.__name__} was called at {datetime.now().strftime("%H:%M:%S")}')
+                f'Method from {cls.__name__} has been called at {datetime.now().strftime("%H:%M:%S")}')
             result = fn(*args, **kwargs)
             return result
         return new_call
@@ -38,7 +45,7 @@ class IndexView:
         return '200 OK', [bytes(output, 'utf-8')]
 
 
-@debug
+@app('/about/')
 class AboutView:
     def __call__(self, request):
         title = 'About'
@@ -93,3 +100,11 @@ class SecretFront:
 class OtherFront:
     def __call__(self, request):
         request['course'] = 'key'
+
+
+routes.update({
+    '^/$': IndexView(),
+    '/categories/': CategoriesView(),
+    '/courses/': CoursesView(),
+    '^/course/\w*': CourseView(),
+})

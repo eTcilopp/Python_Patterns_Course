@@ -13,13 +13,16 @@ logging.basicConfig(
 logging.info('Started Logging')
 
 
-routes = {
-    '^/$': IndexView(),
-    '/about/': AboutView(),
-    '/categories/': CategoriesView(),
-    '/courses/': CoursesView(),
-    '^/course/\w*': CourseView(),
-}
+# routes = {
+#     '^/$': IndexView(),
+#     '/about/': AboutView(),
+#     '/categories/': CategoriesView(),
+#     '/courses/': CoursesView(),
+#     '^/course/\w*': CourseView(),
+# }
+
+
+
 
 fronts = [SecretFront(), OtherFront()]
 

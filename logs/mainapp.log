@@ -224,3 +224,8 @@ INFO       2020-11-19 19:59:08,083 Processed path: /courses/
 INFO       2020-11-19 19:59:19,798 Created new course: Swing
 INFO       2020-11-19 19:59:19,798 Processed path: /courses/
 INFO       2020-11-19 19:59:21,453 Processed path: /course/Swing/
+INFO       2020-11-19 20:00:56,906 Processed path: /
+INFO       2020-11-19 20:00:57,628 Processed path: /about/
+INFO       2020-11-19 20:28:57,609 Started Logging
+INFO       2020-11-19 20:29:04,168 Processed path: /
+INFO       2020-11-19 20:29:05,056 Processed path: /about/
