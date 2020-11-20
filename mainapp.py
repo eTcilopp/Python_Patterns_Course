@@ -113,6 +113,7 @@ class Application:
         for front in self.fronts:
             front(request)
 
+
         code, body = view(request)
 
         start_response(code, [('Content-Type', 'text/html')])

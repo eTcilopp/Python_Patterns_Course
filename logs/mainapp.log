@@ -28,3 +28,199 @@ INFO       2020-11-14 16:47:11,390 Created new course: Swing
 INFO       2020-11-14 16:47:11,391 Processed path: /courses/
 INFO       2020-11-14 16:47:24,620 Processed path: /course/Piano/
 INFO       2020-11-14 16:47:33,531 Processed path: /courses/
+INFO       2020-11-14 17:01:08,340 Started Logging
+INFO       2020-11-14 17:01:10,898 Processed path: /
+INFO       2020-11-14 17:01:12,433 Processed path: /about/
+INFO       2020-11-14 17:01:14,112 Processed path: /categories/
+INFO       2020-11-14 17:01:19,685 Created new category: Jazz
+INFO       2020-11-14 17:01:19,685 Processed path: /categories/
+INFO       2020-11-14 17:01:24,577 Created new category: Box
+INFO       2020-11-14 17:01:24,578 Processed path: /categories/
+INFO       2020-11-14 17:01:28,624 Created new category: Sex
+INFO       2020-11-14 17:01:28,624 Processed path: /categories/
+INFO       2020-11-14 17:01:30,080 Processed path: /courses/
+INFO       2020-11-14 17:01:59,973 Created new course: Piano
+INFO       2020-11-14 17:01:59,973 Processed path: /courses/
+INFO       2020-11-14 17:02:28,610 Created new course: Piano
+INFO       2020-11-14 17:02:28,610 Processed path: /courses/
+INFO       2020-11-14 17:02:33,244 Processed path: /courses/
+INFO       2020-11-14 17:02:46,297 Started Logging
+INFO       2020-11-14 17:02:48,171 Processed path: /
+INFO       2020-11-14 17:02:48,888 Processed path: /about/
+INFO       2020-11-14 17:02:49,635 Processed path: /courses/
+INFO       2020-11-14 17:02:50,963 Processed path: /categories/
+INFO       2020-11-14 17:02:55,762 Created new category: Jazz
+INFO       2020-11-14 17:02:55,762 Processed path: /categories/
+INFO       2020-11-14 17:02:56,831 Processed path: /courses/
+INFO       2020-11-14 17:03:05,200 Created new course: Piano
+INFO       2020-11-14 17:03:05,201 Processed path: /courses/
+INFO       2020-11-14 17:03:07,150 Processed path: /courses/
+INFO       2020-11-14 17:03:08,361 Processed path: /course/Piano/
+INFO       2020-11-14 17:03:20,625 Processed path: /courses/
+INFO       2020-11-14 17:03:38,170 Processed path: /categories/
+INFO       2020-11-14 17:03:42,313 Created new category: Box
+INFO       2020-11-14 17:03:42,313 Processed path: /categories/
+INFO       2020-11-14 17:03:43,049 Processed path: /courses/
+INFO       2020-11-14 17:03:55,163 Created new course: Ho+to+attack
+INFO       2020-11-14 17:03:55,163 Processed path: /courses/
+INFO       2020-11-14 17:03:56,342 Processed path: /course/Ho+to+attack/
+INFO       2020-11-16 21:26:17,317 Started Logging
+INFO       2020-11-16 21:26:26,698 Processed path: /
+INFO       2020-11-16 21:26:32,732 Processed path: /categories/
+INFO       2020-11-16 21:26:35,963 Processed path: /courses/
+INFO       2020-11-16 21:26:41,446 Processed path: /categories/
+INFO       2020-11-16 21:26:46,692 Created new category: Jazz
+INFO       2020-11-16 21:26:46,693 Processed path: /categories/
+INFO       2020-11-16 21:26:49,901 Processed path: /courses/
+INFO       2020-11-16 21:26:52,729 Processed path: /categories/
+INFO       2020-11-16 21:26:56,751 Created new category: Box
+INFO       2020-11-16 21:26:56,752 Processed path: /categories/
+INFO       2020-11-16 21:26:57,900 Processed path: /courses/
+INFO       2020-11-16 21:27:00,519 Processed path: /categories/
+INFO       2020-11-16 21:27:04,071 Created new category: Sex
+INFO       2020-11-16 21:27:04,071 Processed path: /categories/
+INFO       2020-11-16 21:27:05,456 Processed path: /courses/
+INFO       2020-11-16 21:27:18,915 Created new course: Swing
+INFO       2020-11-16 21:27:18,915 Processed path: /courses/
+INFO       2020-11-16 21:27:22,058 Processed path: /course/Swing/
+INFO       2020-11-16 21:38:54,054 Processed path: /categories/
+INFO       2020-11-16 21:38:55,500 Processed path: /about/
+INFO       2020-11-16 21:38:57,342 Processed path: /
+INFO       2020-11-16 21:39:01,019 Processed path: /categories/
+INFO       2020-11-16 21:39:01,882 Processed path: /courses/
+INFO       2020-11-16 21:39:03,500 Processed path: /course/Swing/
+INFO       2020-11-18 19:53:56,286 Started Logging
+INFO       2020-11-18 19:54:15,301 Processed path: /
+INFO       2020-11-18 19:54:20,748 Processed path: /categories/
+INFO       2020-11-18 19:54:52,033 Processed path: /categories/
+INFO       2020-11-18 19:54:52,749 Processed path: /courses/
+INFO       2020-11-18 19:54:57,521 Started Logging
+INFO       2020-11-18 20:03:09,095 Started Logging
+INFO       2020-11-18 20:03:58,995 Processed path: /courses/
+INFO       2020-11-18 20:03:59,731 Processed path: /categories/
+INFO       2020-11-18 20:04:00,379 Processed path: /about/
+INFO       2020-11-18 20:04:00,948 Processed path: /
+INFO       2020-11-18 20:04:14,642 Started Logging
+INFO       2020-11-18 20:10:03,050 Started Logging
+INFO       2020-11-18 20:10:08,035 Processed path: /categories/
+INFO       2020-11-18 20:10:13,028 Processed path: /
+INFO       2020-11-18 20:10:48,308 Started Logging
+INFO       2020-11-18 20:10:51,397 Processed path: /categories/
+INFO       2020-11-18 20:10:51,927 Processed path: /about/
+INFO       2020-11-18 20:10:52,613 Processed path: /courses/
+INFO       2020-11-18 20:11:27,007 Started Logging
+INFO       2020-11-18 20:13:00,523 Started Logging
+INFO       2020-11-18 20:13:05,323 Processed path: /about/
+INFO       2020-11-18 20:13:05,971 Processed path: /categories/
+INFO       2020-11-18 20:13:06,595 Processed path: /
+INFO       2020-11-18 20:50:39,893 Started Logging
+INFO       2020-11-18 20:51:02,377 Started Logging
+INFO       2020-11-18 20:51:09,014 Processed path: /
+INFO       2020-11-18 20:56:57,050 Started Logging
+INFO       2020-11-18 20:57:09,623 Processed path: /categories/
+INFO       2020-11-18 20:57:10,361 Processed path: /about/
+INFO       2020-11-18 20:57:10,959 Processed path: /
+INFO       2020-11-18 20:57:15,143 Processed path: /courses/
+INFO       2020-11-18 21:03:42,648 Started Logging
+INFO       2020-11-18 21:03:47,579 Processed path: /
+INFO       2020-11-18 21:03:48,328 Processed path: /about/
+INFO       2020-11-18 21:03:48,843 Processed path: /categories/
+INFO       2020-11-18 21:07:12,351 Started Logging
+INFO       2020-11-18 21:07:16,158 Processed path: /courses/
+INFO       2020-11-18 21:07:17,306 Processed path: /
+INFO       2020-11-18 21:10:04,850 Started Logging
+INFO       2020-11-18 21:10:08,971 Processed path: /about/
+INFO       2020-11-18 21:10:10,268 Processed path: /
+INFO       2020-11-18 21:10:21,950 Processed path: /
+INFO       2020-11-18 21:10:25,030 Processed path: /
+INFO       2020-11-18 21:10:28,970 Processed path: /
+INFO       2020-11-18 21:14:51,542 Started Logging
+INFO       2020-11-18 21:36:36,961 Started Logging
+INFO       2020-11-18 21:40:45,511 Started Logging
+INFO       2020-11-18 21:40:50,303 Processed path: /
+INFO       2020-11-18 21:43:33,036 Started Logging
+INFO       2020-11-18 21:44:24,092 Started Logging
+INFO       2020-11-18 21:44:29,289 Processed path: /
+INFO       2020-11-18 21:45:03,321 Started Logging
+INFO       2020-11-18 21:45:07,246 Processed path: /
+INFO       2020-11-18 21:48:50,560 Started Logging
+INFO       2020-11-18 21:48:54,069 Processed path: /
+INFO       2020-11-18 21:50:02,621 Started Logging
+INFO       2020-11-18 21:50:06,382 Processed path: /
+INFO       2020-11-18 21:52:03,737 Started Logging
+INFO       2020-11-18 21:52:06,876 Processed path: /about/
+INFO       2020-11-18 21:52:07,566 Processed path: /
+INFO       2020-11-18 21:52:42,033 Started Logging
+INFO       2020-11-18 21:52:45,083 Processed path: /
+INFO       2020-11-18 21:54:24,641 Started Logging
+INFO       2020-11-18 21:54:28,029 Processed path: /
+INFO       2020-11-18 21:55:17,703 Started Logging
+INFO       2020-11-18 21:55:20,421 Processed path: /
+INFO       2020-11-18 21:57:01,479 Started Logging
+INFO       2020-11-18 21:57:05,687 Processed path: /
+INFO       2020-11-18 21:57:49,994 Started Logging
+INFO       2020-11-18 21:57:52,592 Processed path: /
+INFO       2020-11-18 22:02:01,967 Started Logging
+INFO       2020-11-18 22:02:04,897 Processed path: /
+INFO       2020-11-18 22:02:05,498 Processed path: /about/
+INFO       2020-11-18 22:02:06,128 Processed path: /categories/
+INFO       2020-11-18 22:02:06,595 Processed path: /courses/
+INFO       2020-11-18 22:02:08,165 Processed path: /categories/
+INFO       2020-11-18 22:02:09,655 Created new category: d
+INFO       2020-11-18 22:02:09,655 Processed path: /categories/
+INFO       2020-11-18 22:02:12,394 Created new category: f
+INFO       2020-11-18 22:02:12,395 Processed path: /categories/
+INFO       2020-11-18 22:02:13,779 Processed path: /courses/
+INFO       2020-11-18 22:02:21,163 Created new course: df
+INFO       2020-11-18 22:02:21,164 Processed path: /courses/
+INFO       2020-11-18 22:02:22,575 Processed path: /course/df/
+INFO       2020-11-18 22:04:16,214 Started Logging
+INFO       2020-11-18 22:04:20,551 Processed path: /about/
+INFO       2020-11-18 22:04:21,284 Processed path: /
+INFO       2020-11-18 22:06:26,584 Started Logging
+INFO       2020-11-18 22:10:44,527 Started Logging
+INFO       2020-11-18 22:10:47,342 Processed path: /about/
+INFO       2020-11-18 22:10:47,927 Processed path: /
+INFO       2020-11-19 16:13:48,951 Started Logging
+INFO       2020-11-19 16:14:01,445 Processed path: /
+INFO       2020-11-19 16:14:22,230 Processed path: /
+INFO       2020-11-19 16:16:38,379 Processed path: /about/
+INFO       2020-11-19 16:16:40,894 Processed path: /courses/
+INFO       2020-11-19 16:16:41,688 Processed path: /categories/
+INFO       2020-11-19 16:16:42,505 Processed path: /about/
+INFO       2020-11-19 16:16:47,563 Processed path: /
+INFO       2020-11-19 16:19:09,903 Processed path: /
+INFO       2020-11-19 16:19:17,164 Started Logging
+INFO       2020-11-19 16:19:21,215 Processed path: /
+INFO       2020-11-19 16:19:22,502 Processed path: /about/
+INFO       2020-11-19 18:32:56,853 Started Logging
+INFO       2020-11-19 18:33:04,113 Processed path: /about/
+INFO       2020-11-19 18:39:34,950 Started Logging
+INFO       2020-11-19 18:39:40,524 Processed path: /categories/
+INFO       2020-11-19 18:39:41,519 Processed path: /
+INFO       2020-11-19 18:39:42,002 Processed path: /about/
+INFO       2020-11-19 18:41:49,623 Started Logging
+INFO       2020-11-19 18:41:54,650 Processed path: /courses/
+INFO       2020-11-19 18:42:00,110 Processed path: /
+INFO       2020-11-19 18:42:01,530 Processed path: /about/
+INFO       2020-11-19 18:44:58,609 Started Logging
+INFO       2020-11-19 18:45:07,822 Processed path: /categories/
+INFO       2020-11-19 18:45:11,432 Processed path: /about/
+INFO       2020-11-19 19:54:19,687 Started Logging
+INFO       2020-11-19 19:54:23,674 Processed path: /categories/
+INFO       2020-11-19 19:54:24,574 Processed path: /about/
+INFO       2020-11-19 19:54:25,420 Processed path: /
+INFO       2020-11-19 19:54:26,170 Processed path: /about/
+INFO       2020-11-19 19:54:26,653 Processed path: /categories/
+INFO       2020-11-19 19:54:27,249 Processed path: /courses/
+INFO       2020-11-19 19:58:54,101 Started Logging
+INFO       2020-11-19 19:58:56,859 Processed path: /about/
+INFO       2020-11-19 19:58:58,746 Processed path: /categories/
+INFO       2020-11-19 19:59:01,902 Created new category: Jazz
+INFO       2020-11-19 19:59:01,902 Processed path: /categories/
+INFO       2020-11-19 19:59:06,772 Created new category: Box
+INFO       2020-11-19 19:59:06,773 Processed path: /categories/
+INFO       2020-11-19 19:59:08,083 Processed path: /courses/
+INFO       2020-11-19 19:59:19,798 Created new course: Swing
+INFO       2020-11-19 19:59:19,798 Processed path: /courses/
+INFO       2020-11-19 19:59:21,453 Processed path: /course/Swing/
