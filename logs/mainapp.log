@@ -263,3 +263,17 @@ INFO       2020-11-20 16:40:39,936 Started Logging
 INFO       2020-11-20 17:59:48,111 Processed path: /about/
 INFO       2020-11-20 17:59:48,896 Processed path: /categories/
 INFO       2020-11-20 17:59:50,438 Processed path: /
+INFO       2020-11-21 10:51:47,314 Started Logging
+INFO       2020-11-21 10:52:08,378 Processed path: /
+INFO       2020-11-21 10:52:12,694 Processed path: /about/
+INFO       2020-11-21 10:52:13,549 Processed path: /categories/
+INFO       2020-11-21 10:52:14,281 Processed path: /courses/
+INFO       2020-11-21 10:52:15,030 Processed path: /about/
+INFO       2020-11-21 10:52:54,852 Processed path: /courses/
+INFO       2020-11-21 10:52:55,523 Processed path: /categories/
+INFO       2020-11-21 10:52:57,577 Created new category: sda
+INFO       2020-11-21 10:52:57,577 Processed path: /categories/
+INFO       2020-11-21 10:53:00,185 Processed path: /courses/
+INFO       2020-11-21 10:53:09,610 Created new course: sss
+INFO       2020-11-21 10:53:09,611 Processed path: /courses/
+INFO       2020-11-21 10:53:11,235 Processed path: /course/sss/

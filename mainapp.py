@@ -13,17 +13,6 @@ logging.basicConfig(
 logging.info('Started Logging')
 
 
-# routes = {
-#     '^/$': IndexView(),
-#     '/about/': AboutView(),
-#     '/categories/': CategoriesView(),
-#     '/courses/': CoursesView(),
-#     '^/course/\w*': CourseView(),
-# }
-
-
-
-
 fronts = [SecretFront(), OtherFront()]
 
 
@@ -93,8 +82,8 @@ class Application:
                 categories_list.append(data['createcategory'])
                 logging.info(f'Created new category: {data["createcategory"]}')
             if 'newcoursename' in data:
-                newCourse = CourseFactory.get_course(data['newcoursetype'], data['newcoursename'],
-                                                     data['newcoursecategory'])
+                newCourse = CourseFactory.get_course(
+                    data['newcoursetype'], data['newcoursename'], data['newcoursecategory'])
                 courses_list.append(newCourse)
                 logging.info(f'Created new course: {newCourse.courseName}')
             print(data)  # TODO - remove
@@ -115,7 +104,6 @@ class Application:
 
         for front in self.fronts:
             front(request)
-
 
         code, body = view(request)
 
