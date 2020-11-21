@@ -7,7 +7,7 @@ routes = {}
 
 def app(url):
     def decorator(cls):
-        routes.update({url: cls})
+        routes.update({url: cls()})
         return cls
     return decorator
 

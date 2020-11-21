@@ -229,3 +229,37 @@ INFO       2020-11-19 20:00:57,628 Processed path: /about/
 INFO       2020-11-19 20:28:57,609 Started Logging
 INFO       2020-11-19 20:29:04,168 Processed path: /
 INFO       2020-11-19 20:29:05,056 Processed path: /about/
+INFO       2020-11-19 20:31:42,271 Started Logging
+INFO       2020-11-19 20:31:42,327 Started Logging
+INFO       2020-11-20 13:26:14,121 Started Logging
+INFO       2020-11-20 13:26:25,027 Processed path: /
+INFO       2020-11-20 13:26:27,238 Processed path: /about/
+INFO       2020-11-20 13:26:27,947 Processed path: /categories/
+INFO       2020-11-20 13:26:28,772 Processed path: /courses/
+INFO       2020-11-20 13:26:29,914 Processed path: /
+INFO       2020-11-20 13:27:01,193 Processed path: /about/
+INFO       2020-11-20 13:27:01,793 Processed path: /categories/
+INFO       2020-11-20 13:27:11,377 Processed path: /
+INFO       2020-11-20 14:17:24,480 Processed path: /about/
+INFO       2020-11-20 14:17:25,043 Processed path: /categories/
+INFO       2020-11-20 14:17:26,348 Processed path: /categories/
+INFO       2020-11-20 14:17:30,606 Created new category: Jazz
+INFO       2020-11-20 14:17:30,606 Processed path: /categories/
+INFO       2020-11-20 14:17:31,849 Processed path: /courses/
+INFO       2020-11-20 14:17:38,352 Created new course: Swing
+INFO       2020-11-20 14:17:38,353 Processed path: /courses/
+INFO       2020-11-20 14:17:39,459 Processed path: /course/Swing/
+INFO       2020-11-20 14:18:05,054 Processed path: /
+INFO       2020-11-20 14:18:06,304 Processed path: /about/
+INFO       2020-11-20 14:18:06,922 Processed path: /categories/
+INFO       2020-11-20 14:18:07,958 Processed path: /courses/
+INFO       2020-11-20 16:39:57,349 Processed path: /
+INFO       2020-11-20 16:39:59,948 Processed path: /courses/
+INFO       2020-11-20 16:40:01,780 Processed path: /categories/
+INFO       2020-11-20 16:40:04,424 Processed path: /courses/
+INFO       2020-11-20 16:40:07,032 Processed path: /course/Swing/
+INFO       2020-11-20 16:40:09,699 Processed path: /
+INFO       2020-11-20 16:40:39,936 Started Logging
+INFO       2020-11-20 17:59:48,111 Processed path: /about/
+INFO       2020-11-20 17:59:48,896 Processed path: /categories/
+INFO       2020-11-20 17:59:50,438 Processed path: /
