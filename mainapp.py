@@ -1,7 +1,7 @@
 import re
 import logging
 from views import *
-from models import CourseFactory
+from models import CourseFactory, UserFactory
 
 # simple logging setup
 # to log an event do: logging.info(f'Event {variable}')
@@ -86,6 +86,11 @@ class Application:
                     data['newcoursetype'], data['newcoursename'], data['newcoursecategory'])
                 courses_list.append(newCourse)
                 logging.info(f'Created new course: {newCourse.courseName}')
+            if 'addstfirstname' in data and 'addstlastname' in data and 'addstdob' in data:
+                new_student = UserFactory.create_user(
+                    'student', data['addstfirstname'], data['addstlastname'], data['addstdob'])
+                logging.info(f'Created new student: {new_student.get_name()}')
+
             print(data)  # TODO - remove
 
         view = NotFound404()
