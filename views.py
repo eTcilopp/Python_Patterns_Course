@@ -1,3 +1,4 @@
+import re
 from datetime import datetime
 from my_framework.tempalator import render
 
@@ -7,10 +8,16 @@ routes = {}
 
 
 def app(url):
+    if '<int>' in url:
+        url = url.replace('<int>', r'\d*')
+        url = re.compile(url)
+    elif '<str>' in url:
+        url = url.replace('<str>', r'\w*')
+        url = re.compile(url)
+
     def decorator(cls):
         routes.update({url: cls()})
         return cls
-
     return decorator
 
 
@@ -43,6 +50,7 @@ def find_student(student_id):
 
 
 @debug
+@app('^/$')
 class IndexView:
     def __call__(self, request):
         title = 'Index'
@@ -77,7 +85,8 @@ class StudentsView:
                         object_list=Student.student_list)
         return '200 OK', [bytes(output, 'utf-8')]
 
-
+@debug
+@app('/student/<int>')
 class StudentView:
     def __call__(self, request):
         student_id = int(request['path'][9:-1])
@@ -90,6 +99,7 @@ class StudentView:
 
 
 @debug
+@app('/categories/')
 class CategoriesView:
     def __call__(self, request):
         title = 'Categories'
@@ -100,6 +110,7 @@ class CategoriesView:
 
 
 @debug
+@app('/courses/')
 class CoursesView:
     def __call__(self, request):
         title = 'Courses'
@@ -113,6 +124,7 @@ class CoursesView:
 
 
 @debug
+@app(r'/course/<str>')
 class CourseView:
     def __call__(self, request):
         title = 'Course!'
@@ -138,12 +150,3 @@ class SecretFront:
 class OtherFront:
     def __call__(self, request):
         request['course'] = 'key'
-
-
-routes.update({
-    '^/$': IndexView(),
-    '/categories/': CategoriesView(),
-    '/courses/': CoursesView(),
-    r'^/course/\w*': CourseView(),
-    r'^/student/\d*': StudentView()
-})
