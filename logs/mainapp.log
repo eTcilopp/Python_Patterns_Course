@@ -473,3 +473,41 @@ INFO       2020-11-24 19:59:53,557 Created new student: First name: Konstantin, 
 INFO       2020-11-24 19:59:53,558 Processed path: /students/
 INFO       2020-11-24 19:59:57,805 Processed path: /student/1/
 INFO       2020-11-24 20:00:02,924 Processed path: /
+INFO       2020-11-24 20:15:26,000 Started Logging
+INFO       2020-11-24 20:15:32,035 Processed path: /about/
+INFO       2020-11-24 20:15:32,664 Processed path: /categories/
+INFO       2020-11-24 20:15:33,266 Processed path: /courses/
+INFO       2020-11-24 20:15:35,082 Processed path: /students/
+INFO       2020-11-24 20:15:56,244 Processed path: /courses/
+INFO       2020-11-24 20:20:14,535 Processed path: /courses/
+INFO       2020-11-24 20:20:37,574 Processed path: /courses/
+INFO       2020-11-24 20:20:39,115 Processed path: /courses/
+INFO       2020-11-24 20:20:40,222 Processed path: /categories/
+INFO       2020-11-24 20:20:43,874 Created new category: Jazz
+INFO       2020-11-24 20:20:43,874 Processed path: /categories/
+INFO       2020-11-24 20:20:45,411 Processed path: /courses/
+INFO       2020-11-24 20:22:22,643 Processed path: /courses/
+INFO       2020-11-24 20:23:10,367 Processed path: /courses/
+INFO       2020-11-24 20:25:41,087 Processed path: /courses/
+INFO       2020-11-24 20:25:42,117 Processed path: /courses/
+INFO       2020-11-24 20:26:19,799 Processed path: /courses/
+INFO       2020-11-24 20:26:37,248 Processed path: /courses/
+INFO       2020-11-24 20:26:41,379 Processed path: /courses/
+INFO       2020-11-24 20:26:42,978 Processed path: /categories/
+INFO       2020-11-24 20:26:46,122 Created new category: Box
+INFO       2020-11-24 20:26:46,123 Processed path: /categories/
+INFO       2020-11-24 20:26:48,075 Processed path: /courses/
+INFO       2020-11-24 20:27:53,130 Processed path: /courses/
+INFO       2020-11-24 20:27:59,310 Created new course: Swing
+INFO       2020-11-24 20:27:59,310 Processed path: /courses/
+INFO       2020-11-24 20:28:00,631 Processed path: /course/Swing/
+INFO       2020-11-24 20:28:02,331 Processed path: /students/
+INFO       2020-11-24 20:28:13,615 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-24 20:28:13,615 Processed path: /students/
+INFO       2020-11-24 20:28:14,907 Processed path: /student/1/
+INFO       2020-11-24 20:29:10,813 Processed path: /categories/
+INFO       2020-11-24 20:29:11,945 Processed path: /students/
+INFO       2020-11-24 20:29:21,486 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-24 20:29:21,486 Processed path: /students/
+INFO       2020-11-24 20:29:23,069 Processed path: /courses/
+INFO       2020-11-24 20:29:28,391 Processed path: /course/Swing/
