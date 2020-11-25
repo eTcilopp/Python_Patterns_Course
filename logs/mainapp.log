@@ -382,3 +382,32 @@ INFO       2020-11-23 21:18:40,496 Processed path: /students/
 INFO       2020-11-23 21:18:51,226 Created new student: First name: Konstantin, Last name: Kirikeza
 INFO       2020-11-23 21:18:51,227 Processed path: /students/
 INFO       2020-11-23 21:18:52,693 Processed path: /student/1/
+INFO       2020-11-24 18:28:09,447 Started Logging
+INFO       2020-11-24 18:28:18,727 Processed path: /
+INFO       2020-11-24 18:28:21,349 Processed path: /students/
+INFO       2020-11-24 18:28:22,520 Processed path: /courses/
+INFO       2020-11-24 18:28:24,070 Processed path: /students/
+INFO       2020-11-24 18:28:32,145 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-24 18:28:32,145 Processed path: /students/
+INFO       2020-11-24 18:28:33,446 Processed path: /student/1/
+INFO       2020-11-24 18:28:37,624 Processed path: /student/2/
+INFO       2020-11-24 18:28:49,484 Processed path: /student/1/
+INFO       2020-11-24 18:29:15,250 Processed path: /student/2/
+INFO       2020-11-24 18:32:24,007 Processed path: /student/1/
+INFO       2020-11-24 18:57:26,724 Processed path: /categories/
+INFO       2020-11-24 18:57:28,169 Processed path: /students/
+INFO       2020-11-24 18:57:30,547 Processed path: /student/1/
+INFO       2020-11-24 19:00:37,741 Started Logging
+INFO       2020-11-24 19:00:39,497 Processed path: /courses/
+INFO       2020-11-24 19:00:40,117 Processed path: /students/
+INFO       2020-11-24 19:00:47,634 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-24 19:00:47,634 Processed path: /students/
+INFO       2020-11-24 19:00:49,251 Processed path: /student/1/
+INFO       2020-11-24 19:01:47,336 Processed path: /student/1/
+INFO       2020-11-24 19:01:49,838 Processed path: /courses/
+INFO       2020-11-24 19:01:51,456 Processed path: /categories/
+INFO       2020-11-24 19:01:58,689 Processed path: /students/
+INFO       2020-11-24 19:01:59,662 Processed path: /student/1/
+INFO       2020-11-24 19:02:08,467 Processed path: /about/
+INFO       2020-11-24 19:02:09,487 Processed path: /categories/
+INFO       2020-11-24 19:02:10,251 Processed path: /courses/

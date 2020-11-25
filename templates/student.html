@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
-    {{ object_list }}
+    <h1>Student's Page </h1>
+    <p>Student
+    {{ object_list.first_name }}
+    {{ object_list.last_name }}
+        was born in
+    {{ object_list.dob }}
+        </p>
 {% endblock%}

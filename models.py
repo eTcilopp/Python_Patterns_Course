@@ -30,7 +30,7 @@ class Student(User):
         self.id = Student.student_id
         self.first_name = first_name
         self.last_name = last_name
-        self.yob = dob
+        self.dob = dob
         Student.student_id += 1
         Student.student_list.append(self)
 

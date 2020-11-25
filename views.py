@@ -82,10 +82,6 @@ class StudentView:
     def __call__(self, request):
         student_id = int(request['path'][9:-1])
         student = find_student(student_id)
-        print(student_id) #TODO - fix me!
-        # if 'not found' in student:
-        #     print(student) #TODO - fix me!
-            # return NotFound404
         output = render(
             'student.html',
             title='Student page',
