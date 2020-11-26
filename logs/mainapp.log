@@ -511,3 +511,253 @@ INFO       2020-11-24 20:29:21,486 Created new student: First name: Polina, Last
 INFO       2020-11-24 20:29:21,486 Processed path: /students/
 INFO       2020-11-24 20:29:23,069 Processed path: /courses/
 INFO       2020-11-24 20:29:28,391 Processed path: /course/Swing/
+INFO       2020-11-25 20:21:45,622 Started Logging
+INFO       2020-11-25 20:21:59,682 Processed path: /
+INFO       2020-11-25 20:22:01,759 Processed path: /courses/
+INFO       2020-11-25 20:22:21,722 Processed path: /categories/
+INFO       2020-11-25 20:22:22,799 Processed path: /courses/
+INFO       2020-11-25 20:22:23,809 Processed path: /students/
+INFO       2020-11-25 20:22:24,889 Processed path: /courses/
+INFO       2020-11-25 20:22:27,159 Processed path: /students/
+INFO       2020-11-25 20:22:52,076 Processed path: /courses/
+INFO       2020-11-25 20:23:37,624 Processed path: /categories/
+INFO       2020-11-25 20:23:39,221 Processed path: /courses/
+INFO       2020-11-25 20:24:42,064 Processed path: /categories/
+INFO       2020-11-25 20:24:45,226 Created new category: Jazz
+INFO       2020-11-25 20:24:45,226 Processed path: /categories/
+INFO       2020-11-25 20:24:46,406 Processed path: /courses/
+INFO       2020-11-25 20:25:33,668 Created new course: Swing
+INFO       2020-11-25 20:25:33,669 Processed path: /courses/
+INFO       2020-11-25 20:25:35,285 Processed path: /course/Swing/
+INFO       2020-11-25 20:36:52,824 Started Logging
+INFO       2020-11-25 20:36:56,748 Processed path: /courses/
+INFO       2020-11-25 20:36:57,360 Processed path: /students/
+INFO       2020-11-25 20:36:58,145 Processed path: /categories/
+INFO       2020-11-25 20:37:03,558 Created new category: Jazz
+INFO       2020-11-25 20:37:03,559 Processed path: /categories/
+INFO       2020-11-25 20:37:05,016 Processed path: /courses/
+INFO       2020-11-25 20:37:11,229 Created new course: Swing
+INFO       2020-11-25 20:37:11,230 Processed path: /courses/
+INFO       2020-11-25 20:37:12,251 Processed path: /course/Swing/
+INFO       2020-11-25 20:47:49,848 Started Logging
+INFO       2020-11-25 20:47:54,009 Processed path: /categories/
+INFO       2020-11-25 20:47:57,238 Created new category: Jazz
+INFO       2020-11-25 20:47:57,239 Processed path: /categories/
+INFO       2020-11-25 20:47:58,745 Processed path: /courses/
+INFO       2020-11-25 20:48:02,701 Created new course: Swing
+INFO       2020-11-25 20:48:02,701 Processed path: /courses/
+INFO       2020-11-25 20:48:52,689 Created new course: Swing
+INFO       2020-11-25 20:48:52,689 Processed path: /courses/
+INFO       2020-11-25 20:49:50,388 Started Logging
+INFO       2020-11-25 20:49:51,943 Processed path: /categories/
+INFO       2020-11-25 20:49:54,070 Created new category: Jazz
+INFO       2020-11-25 20:49:54,070 Processed path: /categories/
+INFO       2020-11-25 20:49:55,267 Processed path: /courses/
+INFO       2020-11-25 20:49:58,600 Created new course: Swing
+INFO       2020-11-25 20:49:58,600 Processed path: /courses/
+INFO       2020-11-25 20:53:33,061 Created new course: Swing
+INFO       2020-11-25 20:53:33,062 Processed path: /courses/
+INFO       2020-11-25 20:53:34,510 Processed path: /course/Swing/
+INFO       2020-11-25 20:58:41,771 Started Logging
+INFO       2020-11-25 20:58:44,264 Processed path: /categories/
+INFO       2020-11-25 20:58:47,110 Created new category: Jazz
+INFO       2020-11-25 20:58:47,111 Processed path: /categories/
+INFO       2020-11-25 20:58:48,274 Processed path: /courses/
+INFO       2020-11-25 20:58:51,340 Created new course: Swing
+INFO       2020-11-25 20:58:51,340 Processed path: /courses/
+INFO       2020-11-25 20:58:52,548 Processed path: /course/Swing/
+INFO       2020-11-25 21:01:41,054 Started Logging
+INFO       2020-11-25 21:01:43,688 Processed path: /categories/
+INFO       2020-11-25 21:01:46,146 Created new category: Jazz
+INFO       2020-11-25 21:01:46,146 Processed path: /categories/
+INFO       2020-11-25 21:01:48,098 Processed path: /courses/
+INFO       2020-11-25 21:01:51,009 Created new course: Swing
+INFO       2020-11-25 21:01:51,009 Processed path: /courses/
+INFO       2020-11-25 21:03:25,243 Started Logging
+INFO       2020-11-25 21:03:29,577 Processed path: /categories/
+INFO       2020-11-25 21:03:32,404 Created new category: Jazz
+INFO       2020-11-25 21:03:32,405 Processed path: /categories/
+INFO       2020-11-25 21:03:33,492 Processed path: /courses/
+INFO       2020-11-25 21:03:36,537 Created new course: Swing
+INFO       2020-11-25 21:03:36,538 Processed path: /courses/
+INFO       2020-11-25 21:04:03,532 Started Logging
+INFO       2020-11-25 21:04:07,183 Processed path: /categories/
+INFO       2020-11-25 21:04:09,540 Created new category: Jazz
+INFO       2020-11-25 21:04:09,540 Processed path: /categories/
+INFO       2020-11-25 21:04:10,983 Processed path: /courses/
+INFO       2020-11-25 21:04:13,871 Created new course: Swing
+INFO       2020-11-25 21:04:13,872 Processed path: /courses/
+INFO       2020-11-25 21:04:15,161 Processed path: /course/Swing/
+INFO       2020-11-25 21:04:37,959 Processed path: /course/Swing/
+INFO       2020-11-25 21:04:50,611 Started Logging
+INFO       2020-11-25 21:04:52,744 Processed path: /categories/
+INFO       2020-11-25 21:04:55,411 Created new category: Jazz
+INFO       2020-11-25 21:04:55,411 Processed path: /categories/
+INFO       2020-11-25 21:04:56,828 Processed path: /courses/
+INFO       2020-11-25 21:05:00,557 Created new course: Swing
+INFO       2020-11-25 21:05:00,558 Processed path: /courses/
+INFO       2020-11-25 21:05:01,648 Processed path: /course/Swing/
+INFO       2020-11-25 21:05:28,863 Processed path: /courses/
+INFO       2020-11-25 21:05:30,353 Processed path: /course/Swing/
+INFO       2020-11-25 21:06:12,178 Processed path: /courses/
+INFO       2020-11-25 21:06:14,799 Processed path: /course/Swing/
+INFO       2020-11-25 21:06:28,723 Processed path: /courses/
+INFO       2020-11-25 21:06:29,609 Processed path: /course/Swing/
+INFO       2020-11-25 21:06:34,726 Started Logging
+INFO       2020-11-25 21:06:36,187 Processed path: /categories/
+INFO       2020-11-25 21:06:38,311 Created new category: Jazz
+INFO       2020-11-25 21:06:38,312 Processed path: /categories/
+INFO       2020-11-25 21:06:39,503 Processed path: /courses/
+INFO       2020-11-25 21:06:42,130 Created new course: Swing
+INFO       2020-11-25 21:06:42,130 Processed path: /courses/
+INFO       2020-11-25 21:06:43,486 Processed path: /course/Swing/
+INFO       2020-11-25 21:08:14,692 Started Logging
+INFO       2020-11-25 21:08:16,520 Processed path: /categories/
+INFO       2020-11-25 21:08:19,291 Created new category: Jazz
+INFO       2020-11-25 21:08:19,292 Processed path: /categories/
+INFO       2020-11-25 21:08:20,660 Processed path: /courses/
+INFO       2020-11-25 21:08:23,380 Created new course: Swing
+INFO       2020-11-25 21:08:23,380 Processed path: /courses/
+INFO       2020-11-25 21:08:27,329 Processed path: /course/Swing/
+INFO       2020-11-25 21:09:45,751 Processed path: /courses/
+INFO       2020-11-25 21:09:47,410 Processed path: /course/Swing/
+INFO       2020-11-25 21:09:55,711 Started Logging
+INFO       2020-11-25 21:09:57,448 Processed path: /categories/
+INFO       2020-11-25 21:09:59,652 Created new category: Jazz
+INFO       2020-11-25 21:09:59,652 Processed path: /categories/
+INFO       2020-11-25 21:10:07,608 Processed path: /courses/
+INFO       2020-11-25 21:10:10,325 Created new course: Swing
+INFO       2020-11-25 21:10:10,326 Processed path: /courses/
+INFO       2020-11-25 21:10:11,882 Processed path: /course/Swing/
+INFO       2020-11-25 21:10:39,016 Processed path: /courses/
+INFO       2020-11-25 21:10:40,082 Processed path: /course/Swing/
+INFO       2020-11-25 21:15:37,047 Processed path: /courses/
+INFO       2020-11-25 21:15:38,695 Processed path: /course/Swing/
+INFO       2020-11-25 21:23:05,492 Started Logging
+INFO       2020-11-25 21:23:08,678 Processed path: /categories/
+INFO       2020-11-25 21:23:11,411 Created new category: Jazz
+INFO       2020-11-25 21:23:11,412 Processed path: /categories/
+INFO       2020-11-25 21:23:12,695 Processed path: /courses/
+INFO       2020-11-25 21:23:15,676 Created new course: Swing
+INFO       2020-11-25 21:23:15,676 Processed path: /courses/
+INFO       2020-11-25 21:23:17,438 Processed path: /course/Swing/
+INFO       2020-11-25 21:24:50,016 Started Logging
+INFO       2020-11-25 21:24:51,750 Processed path: /categories/
+INFO       2020-11-25 21:24:54,161 Created new category: Jazz
+INFO       2020-11-25 21:24:54,161 Processed path: /categories/
+INFO       2020-11-25 21:24:55,380 Processed path: /courses/
+INFO       2020-11-25 21:24:59,517 Created new course: Swing
+INFO       2020-11-25 21:24:59,517 Processed path: /courses/
+INFO       2020-11-25 21:25:00,492 Processed path: /course/Swing/
+INFO       2020-11-25 21:25:02,558 Processed path: /students/
+INFO       2020-11-25 21:25:08,709 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-25 21:25:08,709 Processed path: /students/
+INFO       2020-11-25 21:25:10,075 Processed path: /courses/
+INFO       2020-11-25 21:25:11,223 Processed path: /course/Swing/
+INFO       2020-11-25 21:26:16,546 Processed path: /courses/
+INFO       2020-11-25 21:26:17,766 Processed path: /course/Swing/
+INFO       2020-11-25 21:27:13,602 Processed path: /courses/
+INFO       2020-11-25 21:27:15,056 Processed path: /course/Swing/
+INFO       2020-11-25 21:27:25,141 Started Logging
+INFO       2020-11-25 21:27:27,023 Processed path: /categories/
+INFO       2020-11-25 21:27:29,307 Created new category: Jazz
+INFO       2020-11-25 21:27:29,307 Processed path: /categories/
+INFO       2020-11-25 21:27:30,685 Processed path: /courses/
+INFO       2020-11-25 21:27:33,436 Created new course: Swing
+INFO       2020-11-25 21:27:33,437 Processed path: /courses/
+INFO       2020-11-25 21:27:34,981 Processed path: /course/Swing/
+INFO       2020-11-25 21:27:36,291 Processed path: /students/
+INFO       2020-11-25 21:27:42,757 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-25 21:27:42,757 Processed path: /students/
+INFO       2020-11-25 21:27:46,913 Processed path: /courses/
+INFO       2020-11-25 21:27:48,997 Processed path: /course/Swing/
+INFO       2020-11-25 21:29:35,910 Processed path: /about/
+INFO       2020-11-25 21:32:06,965 Started Logging
+INFO       2020-11-25 21:32:11,353 Processed path: /categories/
+INFO       2020-11-25 21:32:13,772 Created new category: Jazz
+INFO       2020-11-25 21:32:13,772 Processed path: /categories/
+INFO       2020-11-25 21:32:15,019 Processed path: /courses/
+INFO       2020-11-25 21:32:18,040 Created new course: Swing
+INFO       2020-11-25 21:32:18,040 Processed path: /courses/
+INFO       2020-11-25 21:32:18,947 Processed path: /students/
+INFO       2020-11-25 21:32:25,490 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-25 21:32:25,490 Processed path: /students/
+INFO       2020-11-25 21:32:33,602 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-25 21:32:33,602 Processed path: /students/
+INFO       2020-11-25 21:32:40,750 Processed path: /courses/
+INFO       2020-11-25 21:32:42,919 Processed path: /course/Swing/
+INFO       2020-11-25 21:35:46,413 Processed path: /courses/
+INFO       2020-11-25 21:35:47,797 Processed path: /course/Swing/
+INFO       2020-11-25 21:37:20,404 Processed path: /courses/
+INFO       2020-11-25 21:37:22,000 Processed path: /course/Swing/
+INFO       2020-11-25 21:37:37,660 Processed path: /course/Swing/
+INFO       2020-11-25 21:37:59,168 Processed path: /course/Swing/
+INFO       2020-11-25 21:38:00,549 Processed path: /student/1/
+INFO       2020-11-25 21:38:07,039 Processed path: /courses/
+INFO       2020-11-25 21:41:33,168 Processed path: /courses/
+INFO       2020-11-25 21:41:34,852 Processed path: /course/Swing/
+INFO       2020-11-25 21:43:10,608 Processed path: /course/Swing/
+INFO       2020-11-25 21:44:07,824 Started Logging
+INFO       2020-11-25 21:44:10,311 Processed path: /categories/
+INFO       2020-11-25 21:44:13,721 Created new category: Jazz
+INFO       2020-11-25 21:44:13,722 Processed path: /categories/
+INFO       2020-11-25 21:44:15,392 Processed path: /courses/
+INFO       2020-11-25 21:44:20,150 Created new course: Swing
+INFO       2020-11-25 21:44:20,151 Processed path: /courses/
+INFO       2020-11-25 21:44:21,502 Processed path: /students/
+INFO       2020-11-25 21:44:28,807 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-25 21:44:28,807 Processed path: /students/
+INFO       2020-11-25 21:44:37,040 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-25 21:44:37,041 Processed path: /students/
+INFO       2020-11-25 21:44:38,964 Processed path: /courses/
+INFO       2020-11-25 21:44:40,095 Processed path: /course/Swing/
+INFO       2020-11-25 21:46:11,600 Processed path: /course/Swing/
+INFO       2020-11-25 21:46:12,613 Processed path: /course/Swing/
+INFO       2020-11-25 21:46:41,136 Processed path: /course/Swing/
+INFO       2020-11-25 21:47:39,339 Processed path: /course/Swing/
+INFO       2020-11-25 21:47:48,267 Started Logging
+INFO       2020-11-25 21:47:52,908 Processed path: /categories/
+INFO       2020-11-25 21:47:55,902 Created new category: Jazz
+INFO       2020-11-25 21:47:55,902 Processed path: /categories/
+INFO       2020-11-25 21:47:57,067 Processed path: /courses/
+INFO       2020-11-25 21:47:59,665 Created new course: Swing
+INFO       2020-11-25 21:47:59,665 Processed path: /courses/
+INFO       2020-11-25 21:48:01,121 Processed path: /students/
+INFO       2020-11-25 21:48:07,107 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-25 21:48:07,107 Processed path: /students/
+INFO       2020-11-25 21:48:10,771 Processed path: /courses/
+INFO       2020-11-25 21:48:11,669 Processed path: /course/Swing/
+INFO       2020-11-25 21:48:13,298 Processed path: /course/Swing/
+INFO       2020-11-25 21:48:51,715 Processed path: /course/Swing/
+INFO       2020-11-25 21:48:56,627 Started Logging
+INFO       2020-11-25 21:48:58,467 Processed path: /categories/
+INFO       2020-11-25 21:49:01,162 Created new category: Jazz
+INFO       2020-11-25 21:49:01,162 Processed path: /categories/
+INFO       2020-11-25 21:49:02,375 Processed path: /courses/
+INFO       2020-11-25 21:49:04,482 Created new course: Swing
+INFO       2020-11-25 21:49:04,482 Processed path: /courses/
+INFO       2020-11-25 21:49:06,393 Processed path: /students/
+INFO       2020-11-25 21:49:16,714 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-25 21:49:16,715 Processed path: /students/
+INFO       2020-11-25 21:49:19,322 Processed path: /courses/
+INFO       2020-11-25 21:49:20,618 Processed path: /course/Swing/
+INFO       2020-11-25 21:49:21,762 Processed path: /course/Swing/
+INFO       2020-11-25 21:53:21,154 Started Logging
+INFO       2020-11-25 21:53:24,499 Processed path: /categories/
+INFO       2020-11-25 21:53:26,840 Created new category: Jazz
+INFO       2020-11-25 21:53:26,840 Processed path: /categories/
+INFO       2020-11-25 21:53:27,993 Processed path: /courses/
+INFO       2020-11-25 21:53:30,040 Created new course: Swing
+INFO       2020-11-25 21:53:30,040 Processed path: /courses/
+INFO       2020-11-25 21:53:31,358 Processed path: /students/
+INFO       2020-11-25 21:53:38,050 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-25 21:53:38,051 Processed path: /students/
+INFO       2020-11-25 21:53:39,897 Processed path: /courses/
+INFO       2020-11-25 21:53:42,116 Processed path: /course/Swing/
+INFO       2020-11-25 21:53:43,365 Processed path: /course/Swing/
+INFO       2020-11-25 21:54:41,341 Processed path: /students/
+INFO       2020-11-25 21:54:47,731 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-25 21:54:47,731 Processed path: /students/
+INFO       2020-11-25 21:54:49,753 Processed path: /courses/
+INFO       2020-11-25 21:54:51,288 Processed path: /course/Swing/
+INFO       2020-11-25 21:54:53,709 Processed path: /course/Swing/

@@ -48,6 +48,11 @@ def find_student(student_id):
             return student
         return f'Student with ID {student_id:} not found'
 
+def find_course(course_name):
+    for course in courses_list:
+        if course.get_courseName['Course name'] == course_name:
+            return course
+
 
 @debug
 @app('^/$')
@@ -128,11 +133,13 @@ class CoursesView:
 class CourseView:
     def __call__(self, request):
         title = 'Course!'
-        course = request['path'][8:-1]
-        print(request)  # TODO - remove Print
+        course_name = request['path'][8:-1]
+        course = find_course(course_name)
+        print('beeep')
+        print(Student.student_list)  # TODO - remove Print
         output = render('course.html',
                         title=title,
-                        object_list={'course': course})
+                        object_list={'course': course, 'all_students': Student.student_list}) #TODO - тут не нужно передавать класс - мы из POST получаем только ID
         return '200 OK', [bytes(output, 'utf-8')]
 
 

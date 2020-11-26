@@ -49,22 +49,35 @@ class UserFactory:
 
 class Course(metaclass=ABCMeta):
 
+    @property
     def get_courseName(self):
         return {'Course name': self.courseName}
 
+    @property
     def get_courseType(self):
         return {'Course Type': self.courseType}
 
+    @property
     def get_courseCategory(self):
         return {'Course Category': self.courseCategory}
+
+    def assign_student(self, student):
+        if student not in self.assignedStudents:
+            self.assignedStudents.append(student)
+
+    def unassign_student(self, student):
+        if student in self.assignedStudents:
+            self.assignedStudents.remove(student)
+
 
 
 class OnlineCourse(Course):
 
     def __init__(self, courseName, courseCategory):
         self.courseType = 'Online'
-        self.courseName = courseName
+        self.courseName = courseName #TODO - сделай super()
         self.courseCategory = courseCategory
+        self.assignedStudents = []
 
 
 class InClassCourse(Course):
@@ -73,6 +86,7 @@ class InClassCourse(Course):
         self.courseType = 'In Class'
         self.courseName = courseName
         self.courseCategory = courseCategory
+        self.assignedStudents = []
 
 
 class CourseFactory:
