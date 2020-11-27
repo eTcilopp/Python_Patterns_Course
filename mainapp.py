@@ -83,13 +83,22 @@ class Application:
                 logging.info(f'Created new category: {data["createcategory"]}')
             if 'newcoursename' in data:
                 newCourse = CourseFactory.get_course(
-                    data['newcoursetype'], data['newcoursename'], data['newcoursecategory'])
+                    data['newcoursetype'],
+                    data['newcoursename'],
+                    data['newcoursecategory']
+                )
                 courses_list.append(newCourse)
                 logging.info(f'Created new course: {newCourse.courseName}')
             if 'addstfirstname' in data and 'addstlastname' in data and 'addstdob' in data:
                 new_student = UserFactory.create_user(
                     'student', data['addstfirstname'], data['addstlastname'], data['addstdob'])
                 logging.info(f'Created new student: {new_student.get_name()}')
+            if 'assigning_student_id' in data and 'course' in data:
+                student = find_student(int(data['assigning_student_id']))
+                course = find_course(data['course'])
+                course.assign_student(student)
+                print(f'mainapp 97 student = {course.assignedStudents}')
+                logging.info(f'Student: {student.last_name}, {student.first_name}  enrolled into the course {course.get_courseName["Course name"]}')
 
             print(data)  # TODO - remove
 

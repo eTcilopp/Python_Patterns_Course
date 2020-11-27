@@ -46,12 +46,14 @@ def find_student(student_id):
     for student in Student.student_list:
         if student.id == student_id:
             return student
-        return f'Student with ID {student_id:} not found'
+    return f'Student with ID {student_id} not found'
+
 
 def find_course(course_name):
     for course in courses_list:
         if course.get_courseName['Course name'] == course_name:
             return course
+
 
 
 @debug
@@ -89,6 +91,7 @@ class StudentsView:
                         title=title,
                         object_list=Student.student_list)
         return '200 OK', [bytes(output, 'utf-8')]
+
 
 @debug
 @app('/student/<int>')
@@ -131,15 +134,28 @@ class CoursesView:
 @debug
 @app(r'/course/<str>')
 class CourseView:
+
+    def get_available_students_list(self, enrolled_students_id_list):
+        _available_students_list = []
+        for student in Student.student_list:
+            if student.id not in enrolled_students_id_list:
+                _available_students_list.append(
+                    {'id': student.id, 'first_name': student.first_name, 'last_name': student.last_name})
+        return _available_students_list
+
     def __call__(self, request):
         title = 'Course!'
         course_name = request['path'][8:-1]
         course = find_course(course_name)
-        print('beeep')
-        print(Student.student_list)  # TODO - remove Print
-        output = render('course.html',
-                        title=title,
-                        object_list={'course': course, 'all_students': Student.student_list}) #TODO - тут не нужно передавать класс - мы из POST получаем только ID
+        _enrolled_students_id_list = course.get_enrolled_students_id_list
+        _available_students_list=self.get_available_students_list(_enrolled_students_id_list)
+        print(f'views 150 {_enrolled_students_id_list}')
+        output = render(
+            'course.html',
+            title=title,
+            object_list={
+                'course': course,
+                'available_students': _available_students_list})
         return '200 OK', [bytes(output, 'utf-8')]
 
 

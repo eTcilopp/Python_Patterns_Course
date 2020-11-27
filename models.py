@@ -61,6 +61,13 @@ class Course(metaclass=ABCMeta):
     def get_courseCategory(self):
         return {'Course Category': self.courseCategory}
 
+    @property
+    def get_enrolled_students_id_list(self):
+        _enrolled_students_id_list = []
+        for student in self.assignedStudents:
+            _enrolled_students_id_list.append(student.id)
+        return _enrolled_students_id_list
+
     def assign_student(self, student):
         if student not in self.assignedStudents:
             self.assignedStudents.append(student)
@@ -70,12 +77,11 @@ class Course(metaclass=ABCMeta):
             self.assignedStudents.remove(student)
 
 
-
 class OnlineCourse(Course):
 
     def __init__(self, courseName, courseCategory):
         self.courseType = 'Online'
-        self.courseName = courseName #TODO - сделай super()
+        self.courseName = courseName  # TODO - сделай super()
         self.courseCategory = courseCategory
         self.assignedStudents = []
 
@@ -101,6 +107,8 @@ class CourseFactory:
         """
         try:
             if course_type == 'online':
+                course_name = course_name.replace('+', '')
+                course_category = course_category.replace('+', '')
                 return OnlineCourse(course_name, course_category)
             if course_type == 'inclass':
                 return InClassCourse(course_name, course_category)

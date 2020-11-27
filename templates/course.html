@@ -6,30 +6,30 @@
 
     <p>Assigned students:</p>
         {% for assigned_student in object_list['course'].assignedStudents %}
-            <li> <a href='#'>
-                {{ assigned_student }}</a>
+            <li> <a href="/student/{{ assigned_student.id }}">
+                {{ assigned_student.last_name }}, {{ assigned_student.first_name }}</a>
             </li>
         {% endfor %}
     <br>
+    {% if object_list['available_students'] %}
+        <p>Available students:</p>
 
-    <p>Available students:</p>
-<!--        {% for unassigned_student in object_list['all_students'] %}-->
-<!--            <li> <a href='/student/{{ unassigned_student.id }}'>-->
-<!--                {{ unassigned_student.first_name }}</a>-->
-<!--            </li>-->
-<!--        {% endfor %}-->
-<!--    <br>-->
-    <form action="#" method="post" id="post">
+        <form action="#" method="post" id="post">
 
-        <input type="hidden" id="addstfirstname" name="course" value="{{ object_list['course'].get_courseName['Course name'] }}">
+            <input type="hidden" id="addstfirstname" name="course"
+                   value="{{ object_list['course'].get_courseName['Course name'] }}">
 
-       <select id="unassigned_student" name="assigning_student_id">
-            {% for unassigned_student in object_list['all_students'] %}
-                <option value="{{ unassigned_student.id }}">{{ unassigned_student.last_name }}, {{ unassigned_student.first_name }}</option>
-            {% endfor %}
-       </select>
+           <select id="available_student" name="assigning_student_id">
+                {% for available_student in object_list['available_students'] %}
+                    <option value="{{ available_student['id'] }}">
+                        {{ available_student['last_name'] }},
+                        {{ available_student['first_name'] }}
+                    </option>
+                {% endfor %}
+           </select>
 
-    <input type="submit" value="Submit">
-    </form>
+        <input type="submit" value="Enroll">
+        </form>
+    {% endif %}
 
 {% endblock %}
