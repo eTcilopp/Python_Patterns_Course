@@ -1158,3 +1158,275 @@ INFO       2020-11-26 21:42:04,880 Processed path: /courses/
 INFO       2020-11-26 21:42:06,589 Processed path: /course/Howtokillyourenemy/
 INFO       2020-11-26 21:42:09,246 Student: Kirikeza, Polina  enrolled into the course Howtokillyourenemy
 INFO       2020-11-26 21:42:09,247 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 18:57:08,642 Started Logging
+INFO       2020-11-27 18:57:18,542 Processed path: /
+INFO       2020-11-27 18:57:20,739 Processed path: /categories/
+INFO       2020-11-27 18:57:23,549 Created new category: Jazz
+INFO       2020-11-27 18:57:23,550 Processed path: /categories/
+INFO       2020-11-27 18:57:25,015 Processed path: /courses/
+INFO       2020-11-27 18:57:27,338 Created new course: Swing
+INFO       2020-11-27 18:57:27,338 Processed path: /courses/
+INFO       2020-11-27 18:57:35,457 Created new course: How+to+kill+your+enemy.
+INFO       2020-11-27 18:57:35,457 Processed path: /courses/
+INFO       2020-11-27 18:57:46,467 Processed path: /courses/
+INFO       2020-11-27 18:57:47,260 Processed path: /students/
+INFO       2020-11-27 18:57:47,909 Processed path: /courses/
+INFO       2020-11-27 18:57:58,142 Processed path: /course/How+to+kill+your+enemy./
+INFO       2020-11-27 19:17:45,697 Started Logging
+INFO       2020-11-27 19:17:48,829 Processed path: /categories/
+INFO       2020-11-27 19:17:52,465 Processed path: /courses/
+INFO       2020-11-27 19:17:56,125 Processed path: /categories/
+INFO       2020-11-27 19:17:58,457 Created new category: Jazz
+INFO       2020-11-27 19:17:58,458 Processed path: /categories/
+INFO       2020-11-27 19:17:59,473 Processed path: /courses/
+INFO       2020-11-27 19:18:03,846 Created new course: Swing
+INFO       2020-11-27 19:18:03,846 Processed path: /courses/
+INFO       2020-11-27 19:18:05,497 Processed path: /course/Swing/
+INFO       2020-11-27 19:18:08,515 Processed path: /course/Swing/
+INFO       2020-11-27 19:18:21,098 Processed path: /course/Swing/
+INFO       2020-11-27 19:19:08,125 Started Logging
+INFO       2020-11-27 19:19:10,542 Processed path: /categories/
+INFO       2020-11-27 19:19:12,806 Created new category: Jazz
+INFO       2020-11-27 19:19:12,806 Processed path: /categories/
+INFO       2020-11-27 19:19:15,851 Created new category: Box
+INFO       2020-11-27 19:19:15,851 Processed path: /categories/
+INFO       2020-11-27 19:19:17,349 Processed path: /courses/
+INFO       2020-11-27 19:19:20,864 Created new course: Swing
+INFO       2020-11-27 19:19:20,864 Processed path: /courses/
+INFO       2020-11-27 19:19:24,865 Created new course: Howtokillyourenemy
+INFO       2020-11-27 19:19:24,865 Processed path: /courses/
+INFO       2020-11-27 19:19:27,323 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:19:32,515 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:21:51,333 Started Logging
+INFO       2020-11-27 19:21:53,575 Processed path: /categories/
+INFO       2020-11-27 19:21:55,675 Created new category: Jazz
+INFO       2020-11-27 19:21:55,675 Processed path: /categories/
+INFO       2020-11-27 19:21:56,917 Processed path: /courses/
+INFO       2020-11-27 19:21:59,128 Created new course: Howtokillyourenemy
+INFO       2020-11-27 19:21:59,128 Processed path: /courses/
+INFO       2020-11-27 19:22:00,506 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:22:04,805 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:22:50,184 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:27:27,406 Started Logging
+INFO       2020-11-27 19:27:31,200 Processed path: /categories/
+INFO       2020-11-27 19:27:34,417 Created new category: Jazz
+INFO       2020-11-27 19:27:34,417 Processed path: /categories/
+INFO       2020-11-27 19:27:35,901 Processed path: /courses/
+INFO       2020-11-27 19:27:39,742 Created new course: Swing
+INFO       2020-11-27 19:27:39,743 Processed path: /courses/
+INFO       2020-11-27 19:27:45,196 Created new course: How+to+kill+your+enemy
+INFO       2020-11-27 19:27:45,196 Processed path: /courses/
+INFO       2020-11-27 19:27:46,460 Processed path: /students/
+INFO       2020-11-27 19:28:00,439 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-27 19:28:00,439 Processed path: /students/
+INFO       2020-11-27 19:28:09,424 Created new student: First name: Alex, Last name: Kirikeza
+INFO       2020-11-27 19:28:09,424 Processed path: /students/
+INFO       2020-11-27 19:28:16,589 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-27 19:28:16,589 Processed path: /students/
+INFO       2020-11-27 19:28:30,370 Created new student: First name: Nadya, Last name: Loginova
+INFO       2020-11-27 19:28:30,370 Processed path: /students/
+INFO       2020-11-27 19:28:31,812 Processed path: /courses/
+INFO       2020-11-27 19:28:32,677 Processed path: /course/Swing/
+INFO       2020-11-27 19:28:36,440 Student: Kirikeza, Polinaenrolled into the course Swing
+INFO       2020-11-27 19:28:36,441 Processed path: /course/Swing/
+INFO       2020-11-27 19:28:40,144 Student: Loginova, Nadyaenrolled into the course Swing
+INFO       2020-11-27 19:28:40,144 Processed path: /course/Swing/
+INFO       2020-11-27 19:28:44,693 Processed path: /course/Swing/
+INFO       2020-11-27 19:30:36,490 Started Logging
+INFO       2020-11-27 19:30:38,530 Processed path: /categories/
+INFO       2020-11-27 19:30:40,710 Created new category: Jazz
+INFO       2020-11-27 19:30:40,710 Processed path: /categories/
+INFO       2020-11-27 19:30:41,953 Processed path: /courses/
+INFO       2020-11-27 19:30:44,740 Created new course: Swing
+INFO       2020-11-27 19:30:44,740 Processed path: /courses/
+INFO       2020-11-27 19:30:46,138 Processed path: /students/
+INFO       2020-11-27 19:30:54,169 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-27 19:30:54,169 Processed path: /students/
+INFO       2020-11-27 19:31:02,224 Created new student: First name: Nadya, Last name: Loginova
+INFO       2020-11-27 19:31:02,224 Processed path: /students/
+INFO       2020-11-27 19:31:03,452 Created new student: First name: , Last name: 
+INFO       2020-11-27 19:31:03,452 Processed path: /students/
+INFO       2020-11-27 19:31:07,320 Processed path: /courses/
+INFO       2020-11-27 19:31:14,759 Processed path: /course/Swing/
+INFO       2020-11-27 19:31:17,929 Student: Kirikeza, Polinaenrolled into the course Swing
+INFO       2020-11-27 19:31:17,929 Processed path: /course/Swing/
+INFO       2020-11-27 19:31:21,181 Student: Loginova, Nadyaenrolled into the course Swing
+INFO       2020-11-27 19:31:21,181 Processed path: /course/Swing/
+INFO       2020-11-27 19:32:12,462 Processed path: /categories/
+INFO       2020-11-27 19:32:13,124 Processed path: /courses/
+INFO       2020-11-27 19:32:15,554 Processed path: /courses/
+INFO       2020-11-27 19:32:16,225 Processed path: /course/Swing/
+INFO       2020-11-27 19:32:26,460 Started Logging
+INFO       2020-11-27 19:32:27,960 Processed path: /categories/
+INFO       2020-11-27 19:32:32,187 Created new category: Jazz
+INFO       2020-11-27 19:32:32,188 Processed path: /categories/
+INFO       2020-11-27 19:32:33,429 Processed path: /courses/
+INFO       2020-11-27 19:32:35,341 Created new course: Swing
+INFO       2020-11-27 19:32:35,341 Processed path: /courses/
+INFO       2020-11-27 19:32:36,417 Processed path: /students/
+INFO       2020-11-27 19:32:43,181 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-27 19:32:43,181 Processed path: /students/
+INFO       2020-11-27 19:32:54,966 Created new student: First name: Nadya, Last name: Loginova
+INFO       2020-11-27 19:32:54,966 Processed path: /students/
+INFO       2020-11-27 19:32:56,213 Processed path: /courses/
+INFO       2020-11-27 19:32:57,069 Processed path: /course/Swing/
+INFO       2020-11-27 19:32:59,555 Student: Kirikeza, Polinaenrolled into the course Swing
+INFO       2020-11-27 19:32:59,555 Processed path: /course/Swing/
+INFO       2020-11-27 19:33:03,123 Processed path: /course/Swing/
+INFO       2020-11-27 19:33:29,618 Student: Loginova, Nadyaenrolled into the course Swing
+INFO       2020-11-27 19:33:29,618 Processed path: /course/Swing/
+INFO       2020-11-27 19:33:43,597 Processed path: /course/Swing/
+INFO       2020-11-27 19:34:11,501 Processed path: /
+INFO       2020-11-27 19:34:12,788 Processed path: /about/
+INFO       2020-11-27 19:34:13,410 Processed path: /categories/
+INFO       2020-11-27 19:34:17,836 Created new category: Box
+INFO       2020-11-27 19:34:17,837 Processed path: /categories/
+INFO       2020-11-27 19:34:19,232 Processed path: /courses/
+INFO       2020-11-27 19:34:25,472 Created new course: Howtokillyourenemy
+INFO       2020-11-27 19:34:25,472 Processed path: /courses/
+INFO       2020-11-27 19:34:26,614 Processed path: /students/
+INFO       2020-11-27 19:34:33,481 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-27 19:34:33,481 Processed path: /students/
+INFO       2020-11-27 19:34:40,032 Created new student: First name: Alex, Last name: Kirikeza
+INFO       2020-11-27 19:34:40,032 Processed path: /students/
+INFO       2020-11-27 19:34:41,321 Processed path: /courses/
+INFO       2020-11-27 19:34:42,167 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:34:47,229 Student: Kirikeza, Alexenrolled into the course Howtokillyourenemy
+INFO       2020-11-27 19:34:47,229 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:34:58,659 Student: Kirikeza, Konstantinenrolled into the course Howtokillyourenemy
+INFO       2020-11-27 19:34:58,659 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:35:04,788 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:38:35,306 Processed path: /courses/
+INFO       2020-11-27 19:38:36,654 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:41:14,252 Processed path: /courses/
+INFO       2020-11-27 19:41:14,964 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:50:59,642 Processed path: /courses/
+INFO       2020-11-27 19:51:00,468 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:51:03,148 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 19:51:52,757 Processed path: /courses/
+INFO       2020-11-27 19:51:54,015 Processed path: /course/Swing/
+INFO       2020-11-27 19:51:55,236 Processed path: /course/Swing/
+INFO       2020-11-27 19:53:15,587 Processed path: /courses/
+INFO       2020-11-27 19:53:17,021 Processed path: /course/Swing/
+INFO       2020-11-27 19:53:18,262 Processed path: /course/Swing/
+INFO       2020-11-27 19:54:47,865 Started Logging
+INFO       2020-11-27 19:54:50,373 Processed path: /categories/
+INFO       2020-11-27 19:54:54,053 Created new category: Jazz
+INFO       2020-11-27 19:54:54,054 Processed path: /categories/
+INFO       2020-11-27 19:54:55,319 Processed path: /courses/
+INFO       2020-11-27 19:54:57,242 Created new course: Swing
+INFO       2020-11-27 19:54:57,242 Processed path: /courses/
+INFO       2020-11-27 19:54:58,504 Processed path: /students/
+INFO       2020-11-27 19:55:04,347 Created new student: First name: Nadya, Last name: Loginova
+INFO       2020-11-27 19:55:04,347 Processed path: /students/
+INFO       2020-11-27 19:55:05,602 Processed path: /courses/
+INFO       2020-11-27 19:55:06,636 Processed path: /course/Swing/
+INFO       2020-11-27 19:55:07,376 Student: Loginova, Nadyaenrolled into the course Swing
+INFO       2020-11-27 19:55:07,376 Processed path: /course/Swing/
+INFO       2020-11-27 19:55:09,410 Processed path: /course/Swing/
+INFO       2020-11-27 19:59:36,498 Processed path: /courses/
+INFO       2020-11-27 19:59:37,784 Processed path: /course/Swing/
+INFO       2020-11-27 19:59:39,351 Processed path: /course/Swing/
+INFO       2020-11-27 19:59:59,338 Processed path: /course/Swing/
+INFO       2020-11-27 20:00:09,836 Processed path: /courses/
+INFO       2020-11-27 20:00:11,368 Processed path: /course/Swing/
+INFO       2020-11-27 20:00:12,730 Processed path: /course/Swing/
+INFO       2020-11-27 20:04:02,967 Started Logging
+INFO       2020-11-27 20:04:06,638 Processed path: /categories/
+INFO       2020-11-27 20:04:10,501 Created new category: Sex
+INFO       2020-11-27 20:04:10,502 Processed path: /categories/
+INFO       2020-11-27 20:04:13,789 Created new category: Jazz
+INFO       2020-11-27 20:04:13,789 Processed path: /categories/
+INFO       2020-11-27 20:04:14,918 Processed path: /courses/
+INFO       2020-11-27 20:04:19,648 Created new course: Swing
+INFO       2020-11-27 20:04:19,648 Processed path: /courses/
+INFO       2020-11-27 20:04:20,897 Processed path: /students/
+INFO       2020-11-27 20:04:26,562 Created new student: First name: Alex, Last name: Kirikeza
+INFO       2020-11-27 20:04:26,564 Processed path: /students/
+INFO       2020-11-27 20:04:40,573 Created new student: First name: Nadya, Last name: Loginova
+INFO       2020-11-27 20:04:40,573 Processed path: /students/
+INFO       2020-11-27 20:04:42,537 Processed path: /courses/
+INFO       2020-11-27 20:04:44,895 Processed path: /course/Swing/
+INFO       2020-11-27 20:04:46,408 Student: Kirikeza, Alexenrolled into the course Swing
+INFO       2020-11-27 20:04:46,408 Processed path: /course/Swing/
+INFO       2020-11-27 20:04:48,012 Student: Loginova, Nadyaenrolled into the course Swing
+INFO       2020-11-27 20:04:48,012 Processed path: /course/Swing/
+INFO       2020-11-27 20:04:52,620 Processed path: /course/Swing/
+INFO       2020-11-27 20:04:58,894 Processed path: /course/Swing/
+INFO       2020-11-27 20:05:55,064 Started Logging
+INFO       2020-11-27 20:06:01,153 Processed path: /categories/
+INFO       2020-11-27 20:06:03,848 Created new category: Jazz
+INFO       2020-11-27 20:06:03,849 Processed path: /categories/
+INFO       2020-11-27 20:06:06,709 Created new category: Box
+INFO       2020-11-27 20:06:06,709 Processed path: /categories/
+INFO       2020-11-27 20:06:09,915 Processed path: /courses/
+INFO       2020-11-27 20:06:12,724 Created new course: Swing
+INFO       2020-11-27 20:06:12,725 Processed path: /courses/
+INFO       2020-11-27 20:06:16,463 Created new course: Howtokillyourenemy
+INFO       2020-11-27 20:06:16,463 Processed path: /courses/
+INFO       2020-11-27 20:06:18,819 Processed path: /students/
+INFO       2020-11-27 20:06:24,224 Created new student: First name: Alex, Last name: Kirikeza
+INFO       2020-11-27 20:06:24,225 Processed path: /students/
+INFO       2020-11-27 20:06:34,184 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-27 20:06:34,185 Processed path: /students/
+INFO       2020-11-27 20:06:43,052 Created new student: First name: Nadya, Last name: Loginova
+INFO       2020-11-27 20:06:43,052 Processed path: /students/
+INFO       2020-11-27 20:06:52,882 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-11-27 20:06:52,882 Processed path: /students/
+INFO       2020-11-27 20:07:01,140 Created new student: First name: Bill, Last name: Gates
+INFO       2020-11-27 20:07:01,141 Processed path: /students/
+INFO       2020-11-27 20:07:02,648 Processed path: /courses/
+INFO       2020-11-27 20:07:04,192 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:07:08,076 Student: Gates, Billenrolled into the course Howtokillyourenemy
+INFO       2020-11-27 20:07:08,076 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:07:11,871 Student: Loginova, Nadyaenrolled into the course Howtokillyourenemy
+INFO       2020-11-27 20:07:11,872 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:07:16,564 Processed path: /courses/
+INFO       2020-11-27 20:07:19,831 Processed path: /students/
+INFO       2020-11-27 20:07:21,305 Processed path: /courses/
+INFO       2020-11-27 20:07:22,614 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:28,834 Student: Kirikeza, Polinaenrolled into the course Swing
+INFO       2020-11-27 20:07:28,834 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:32,432 Student: Loginova, Nadyaenrolled into the course Swing
+INFO       2020-11-27 20:07:32,433 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:33,656 Student: Kirikeza, Alexenrolled into the course Swing
+INFO       2020-11-27 20:07:33,657 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:34,710 Student: Kirikeza, Konstantinenrolled into the course Swing
+INFO       2020-11-27 20:07:34,710 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:36,245 Student: Gates, Billenrolled into the course Swing
+INFO       2020-11-27 20:07:36,245 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:42,989 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:50,834 Processed path: /course/Swing/
+INFO       2020-11-27 20:07:53,125 Processed path: /course/Swing/
+INFO       2020-11-27 20:08:37,086 Processed path: /categories/
+INFO       2020-11-27 20:08:38,648 Processed path: /courses/
+INFO       2020-11-27 20:08:39,430 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:08:42,852 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:08:45,834 Student: Loginova, Nadyaenrolled into the course Howtokillyourenemy
+INFO       2020-11-27 20:08:45,834 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:09:21,751 Processed path: /courses/
+INFO       2020-11-27 20:09:22,519 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:10:08,967 Processed path: /courses/
+INFO       2020-11-27 20:10:09,752 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:10:16,152 Student: Kirikeza, Polinaenrolled into the course Howtokillyourenemy
+INFO       2020-11-27 20:10:16,153 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:10:22,377 Processed path: /course/Howtokillyourenemy/
+INFO       2020-11-27 20:15:40,640 Started Logging
+INFO       2020-11-27 20:15:43,057 Processed path: /categories/
+INFO       2020-11-27 20:15:46,015 Created new category: Jazz
+INFO       2020-11-27 20:15:46,016 Processed path: /categories/
+INFO       2020-11-27 20:15:47,190 Processed path: /courses/
+INFO       2020-11-27 20:15:49,038 Created new course: Swing
+INFO       2020-11-27 20:15:49,038 Processed path: /courses/
+INFO       2020-11-27 20:15:50,127 Processed path: /students/
+INFO       2020-11-27 20:15:51,018 Processed path: /students/
+INFO       2020-11-27 20:15:52,430 Processed path: /students/
+INFO       2020-11-27 20:15:56,988 Processed path: /students/
+INFO       2020-11-27 20:16:08,115 Created new student: First name: Alex, Last name: Kirikeza
+INFO       2020-11-27 20:16:08,116 Processed path: /students/
+INFO       2020-11-27 20:16:09,766 Processed path: /courses/
+INFO       2020-11-27 20:16:12,920 Processed path: /course/Swing/
+INFO       2020-11-27 20:16:14,573 Student: Kirikeza, Alexenrolled into the course Swing
+INFO       2020-11-27 20:16:14,573 Processed path: /course/Swing/
+INFO       2020-11-27 20:16:17,532 Notivication was sent to all users of a course: Swing
+INFO       2020-11-27 20:16:17,533 Processed path: /course/Swing/

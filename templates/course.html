@@ -8,7 +8,14 @@
         {% for assigned_student in object_list['course'].assignedStudents %}
             <li> <a href="/student/{{ assigned_student.id }}">
                 {{ assigned_student.last_name }}, {{ assigned_student.first_name }}</a>
+
+                <form action="#" method="post" id="unassign_student" name="unassign_student">
+                    <input type="hidden" name="course" value="{{ object_list['course'].get_courseName['Course name'] }}">
+                    <input type="hidden" name="unassign_student_id" value="{{ assigned_student.id }}">
+                    <input type="submit" value="Remove">
+                </form>
             </li>
+            <hr>
         {% endfor %}
     <br>
     {% if object_list['available_students'] %}
@@ -31,5 +38,16 @@
         <input type="submit" value="Enroll">
         </form>
     {% endif %}
+            <br><br><hr>
+            <h2>Send notification to all enrolled users</h2>
+           <form action="#" method="post" id="notify">
+               <input type="hidden"
+                      id="course_name"
+                      name="course"
+                      value="{{ object_list['course'].get_courseName['Course name'] }}">
+               <textarea rows="4" cols="50" name="student_notification_message" form="notify"></textarea>
+               <br><br>
+               <input type="submit" value="Notify">
+           </form>
 
 {% endblock %}

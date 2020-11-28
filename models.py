@@ -8,6 +8,9 @@ class User(metaclass=ABCMeta):
     def get_name(self):
         return f'First name: {self.first_name}, Last name: {self.last_name}'
 
+    def notify(self, course, *args, **kwargs):
+        print(f'Observer {self.first_name} received:', args, kwargs)
+
 
 class Instructor(User):
     instructor_id = 1
@@ -15,8 +18,8 @@ class Instructor(User):
 
     def __init__(self, first_name, last_name, dob):
         self.id = Instructor.instructor_id
-        self.firstName = first_name
-        self.lastName = last_name
+        self.first_name = first_name
+        self.last_name = last_name
         self.yob = dob
         Instructor.instructor_id += 1
         Instructor.instructor_list.append(self)
@@ -75,6 +78,10 @@ class Course(metaclass=ABCMeta):
     def unassign_student(self, student):
         if student in self.assignedStudents:
             self.assignedStudents.remove(student)
+
+    def notify(self, *args, **kwargs):
+        for student in self.assignedStudents:
+            student.notify(self, *args, kwargs)
 
 
 class OnlineCourse(Course):
