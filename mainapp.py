@@ -1,6 +1,6 @@
-import re
 import logging
 from views import *
+from database import *
 from models import CourseFactory, UserFactory
 
 # simple logging setup
@@ -55,6 +55,23 @@ class Application:
     def __init__(self, routes, fronts):
         self.routes = routes
         self.fronts = fronts
+        # creating/connecting to database
+        db = r"courses_portal.db"
+        # creating tables
+        # creating table STUDENTS
+        sql_create_students_table = """CREATE TABLE IF NOT EXISTS students (
+                    id integer PRIMARY KEY, 
+                    first_name text NOT NULL, 
+                    last_name text NOT NULL, 
+                    dob text
+                ); """
+
+        conn = create_connection(db)
+
+        if conn is not None:
+            create_table(conn, sql_create_students_table)
+        else:
+            print("Error! cannot create the database connection.")
 
     def __call__(self, environ, start_response):
         """

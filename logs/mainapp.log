@@ -1430,3 +1430,68 @@ INFO       2020-11-27 20:16:14,573 Student: Kirikeza, Alexenrolled into the cour
 INFO       2020-11-27 20:16:14,573 Processed path: /course/Swing/
 INFO       2020-11-27 20:16:17,532 Notivication was sent to all users of a course: Swing
 INFO       2020-11-27 20:16:17,533 Processed path: /course/Swing/
+INFO       2020-11-27 20:18:13,467 Started Logging
+INFO       2020-11-27 20:18:16,881 Processed path: /
+INFO       2020-11-27 20:18:17,378 Processed path: /about/
+INFO       2020-11-27 20:18:17,946 Processed path: /categories/
+INFO       2020-11-27 20:18:20,860 Created new category: Jazz
+INFO       2020-11-27 20:18:20,860 Processed path: /categories/
+INFO       2020-11-27 20:18:22,201 Processed path: /courses/
+INFO       2020-11-27 20:18:24,756 Created new course: Swing
+INFO       2020-11-27 20:18:24,757 Processed path: /courses/
+INFO       2020-11-27 20:18:26,552 Processed path: /students/
+INFO       2020-11-27 20:18:32,755 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-27 20:18:32,755 Processed path: /students/
+INFO       2020-11-27 20:18:39,490 Created new student: First name: Nadya, Last name: Loginova
+INFO       2020-11-27 20:18:39,491 Processed path: /students/
+INFO       2020-11-27 20:18:40,869 Processed path: /courses/
+INFO       2020-11-27 20:18:43,584 Processed path: /course/Swing/
+INFO       2020-11-27 20:18:48,005 Student: Kirikeza, Polinaenrolled into the course Swing
+INFO       2020-11-27 20:18:48,005 Processed path: /course/Swing/
+INFO       2020-11-27 20:18:51,829 Student: Loginova, Nadyaenrolled into the course Swing
+INFO       2020-11-27 20:18:51,830 Processed path: /course/Swing/
+INFO       2020-11-27 20:18:58,636 Notification was sent to all users of a course: Swing
+INFO       2020-11-27 20:18:58,637 Processed path: /course/Swing/
+INFO       2020-11-27 20:19:05,874 Student Polina unenrolled from the course: Swing
+INFO       2020-11-27 20:19:05,875 Processed path: /course/Swing/
+INFO       2020-11-27 20:19:07,820 Student Nadya unenrolled from the course: Swing
+INFO       2020-11-27 20:19:07,820 Processed path: /course/Swing/
+INFO       2020-11-27 20:19:16,310 Processed path: /courses/
+INFO       2020-11-27 20:19:17,057 Processed path: /students/
+INFO       2020-11-27 20:19:24,999 Created new student: First name: Bill, Last name: Gates
+INFO       2020-11-27 20:19:24,999 Processed path: /students/
+INFO       2020-11-27 20:19:26,913 Processed path: /categories/
+INFO       2020-11-27 20:19:29,294 Created new category: Box
+INFO       2020-11-27 20:19:29,295 Processed path: /categories/
+INFO       2020-11-27 20:19:30,360 Processed path: /courses/
+INFO       2020-11-27 20:19:43,751 Created new course: Howtoseduce
+INFO       2020-11-27 20:19:43,751 Processed path: /courses/
+INFO       2020-11-27 20:19:44,730 Processed path: /course/Howtoseduce/
+INFO       2020-11-27 20:19:49,095 Student: Gates, Billenrolled into the course Howtoseduce
+INFO       2020-11-27 20:19:49,096 Processed path: /course/Howtoseduce/
+INFO       2020-11-28 12:38:13,678 Started Logging
+INFO       2020-11-28 12:39:10,016 Processed path: /
+INFO       2020-11-28 12:39:18,783 Processed path: /categories/
+INFO       2020-11-28 12:39:25,623 Created new category: Jazz
+INFO       2020-11-28 12:39:25,623 Processed path: /categories/
+INFO       2020-11-28 12:39:27,850 Processed path: /courses/
+INFO       2020-11-28 12:39:38,063 Created new course: Swing
+INFO       2020-11-28 12:39:38,064 Processed path: /courses/
+INFO       2020-11-28 12:39:41,572 Processed path: /students/
+INFO       2020-11-28 12:40:09,753 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-11-28 12:40:09,753 Processed path: /students/
+INFO       2020-11-28 12:40:12,351 Processed path: /courses/
+INFO       2020-11-28 12:40:14,875 Processed path: /course/Swing/
+INFO       2020-11-28 12:40:18,340 Student: Kirikeza, Polinaenrolled into the course Swing
+INFO       2020-11-28 12:40:18,340 Processed path: /course/Swing/
+INFO       2020-11-28 13:14:38,836 Started Logging
+INFO       2020-12-01 20:36:26,676 Started Logging
+INFO       2020-12-01 21:00:10,518 Started Logging
+INFO       2020-12-01 21:00:28,197 Processed path: /
+INFO       2020-12-01 21:00:30,108 Processed path: /courses/
+INFO       2020-12-01 21:00:31,137 Processed path: /categories/
+INFO       2020-12-01 21:02:31,250 Started Logging
+INFO       2020-12-01 21:02:47,627 Processed path: /courses/
+INFO       2020-12-01 21:02:49,037 Processed path: /categories/
+INFO       2020-12-01 21:02:50,026 Processed path: /courses/
+INFO       2020-12-01 21:04:30,076 Started Logging

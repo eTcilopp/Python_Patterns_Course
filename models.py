@@ -20,7 +20,7 @@ class Instructor(User):
         self.id = Instructor.instructor_id
         self.first_name = first_name
         self.last_name = last_name
-        self.yob = dob
+        self.dob = dob
         Instructor.instructor_id += 1
         Instructor.instructor_list.append(self)
 
@@ -122,6 +122,9 @@ class CourseFactory:
             raise AssertionError('Course Category or Type not found')
         except AssertionError as _e:
             print(_e)
+
+
+
 
 
 if __name__ == '__main__':
