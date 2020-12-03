@@ -1,7 +1,6 @@
 import logging
 from views import *
-from database import *
-from models import CourseFactory, UserFactory
+from models import CourseFactory, UserFactory, db_connection
 
 # simple logging setup
 # to log an event do: logging.info(f'Event {variable}')
@@ -52,26 +51,11 @@ def parse_wsgi_input_data(data: bytes) -> dict:
 
 
 class Application:
-    def __init__(self, routes, fronts):
+    def __init__(self, routes, fronts, db_connection):
         self.routes = routes
         self.fronts = fronts
-        # creating/connecting to database
-        db = r"courses_portal.db"
-        # creating tables
-        # creating table STUDENTS
-        sql_create_students_table = """CREATE TABLE IF NOT EXISTS students (
-                    id integer PRIMARY KEY, 
-                    first_name text NOT NULL, 
-                    last_name text NOT NULL, 
-                    dob text
-                ); """
+        self.connection = db_connection
 
-        conn = create_connection(db)
-
-        if conn is not None:
-            create_table(conn, sql_create_students_table)
-        else:
-            print("Error! cannot create the database connection.")
 
     def __call__(self, environ, start_response):
         """
@@ -161,4 +145,4 @@ class Application:
         return body
 
 
-application = Application(routes, fronts)
+application = Application(routes, fronts, db_connection)

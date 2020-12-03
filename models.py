@@ -1,7 +1,123 @@
+import threading
 from abc import ABCMeta, abstractmethod
+import sqlite3
+from sqlite3 import Error
+from settings import db_file
+
 
 categories_list = []
 courses_list = []
+
+
+def create_connection(db_file):
+    """ create a database connection to the SQLite database
+        specified by db_file
+    :param db_file: database file
+    :return: Connection object or None
+    """
+    conn = None
+    try:
+        conn = sqlite3.connect(db_file)
+        return conn
+    except Error as e:
+        print(e)
+
+
+def create_table(conn, create_table_sql):
+    """ create a table from the create_table_sql statement
+    :param conn: Connection object
+    :param create_table_sql: a CREATE TABLE statement
+    :return:
+    """
+    try:
+        c = conn.cursor()
+        c.execute(create_table_sql)
+    except Error as e:
+        print(e)
+
+
+def set_up_database():
+    # creating/connecting to database
+    # creating tables
+    # creating table STUDENTS
+    sql_create_students_table = """CREATE TABLE IF NOT EXISTS students (
+                id integer PRIMARY KEY, 
+                first_name text NOT NULL, 
+                last_name text NOT NULL, 
+                dob text
+            ); """
+
+    conn = create_connection(db_file)
+
+    if conn is not None:
+        create_table(conn, sql_create_students_table)
+    else:
+        print("Error! cannot create the database connection.")
+
+    return conn
+
+db_connection = set_up_database()
+
+class RecordNotFoundException(Exception):
+    def __init__(self, message):
+        super().__init__(f'Record not found: {message}')
+
+
+class DbCommitException(Exception):
+    def __init__(self, message):
+        super().__init__(f'Db commit error: {message}')
+
+class UnitOfWork:
+    """
+    Паттерн UNIT OF WORK
+    """
+
+    current = threading.local()
+
+    def __init__(self):
+        self.new_objects = []
+        self.dirty_objects = []
+        self.removed_objects = []
+
+    def register_new(self, obj):
+        self.new_objects.append(obj)
+
+    def register_dirty(self, obj):
+        self.dirty_objects.append(obj)
+
+    def register_removed(self, obj):
+        self.removed_objects.append(obj)
+
+    def commit(self):
+        self.insert_new()
+        self.update_dirty()
+        self.delete_removed()
+
+    def insert_new(self):
+        for obj in self.new_objects:
+            MapperRegistry.get_mapper(obj).insert(obj)
+
+    def update_dirty(self):
+        for obj in self.dirty_objects:
+            MapperRegistry.get_mapper(obj).update(obj)
+
+    def delete_removed(self):
+        for obj in self.removed_objects:
+            MapperRegistry.get_mapper(obj).delete(obj)
+
+    @staticmethod
+    def new_current():
+        __class__.set_current(UnitOfWork())
+
+    @classmethod
+    def set_current(cls, unit_of_work):
+        cls.current.unit_of_work = unit_of_work
+
+    @classmethod
+    def get_current(cls):
+        return cls.current.unit_of_work
+
+
 
 
 class User(metaclass=ABCMeta):
@@ -11,6 +127,16 @@ class User(metaclass=ABCMeta):
     def notify(self, course, *args, **kwargs):
         print(f'Observer {self.first_name} received:', args, kwargs)
 
+class DomainObject:
+
+    def mark_new(self):
+        UnitOfWork.get_current().register_new(self)
+
+    def mark_dirty(self):
+        UnitOfWork.get_current().register_dirty(self)
+
+    def mark_removed(self):
+        UnitOfWork.get_current().register_removed(self)
 
 class Instructor(User):
     instructor_id = 1
@@ -25,8 +151,8 @@ class Instructor(User):
         Instructor.instructor_list.append(self)
 
 
-class Student(User):
-    student_id = 1
+class Student(User, DomainObject):
+    student_id = 1 #TODO - поудалять это ID  и прочие рудименты: теперь есть БД!
     student_list = []
 
     def __init__(self, first_name, last_name, dob):
@@ -37,17 +163,51 @@ class Student(User):
         Student.student_id += 1
         Student.student_list.append(self)
 
+class StudentMapper:
+    def __init__(self, connection):
+        self.connection = connection
+        self.cursor = connection.cursor()
+
+    def find_by_id(self, id_student):
+        statement = f"SELECT id, first_name, last_name FROM students WHERE id=?"
+        self.cursor.execute(statement, (id_student,))
+        result = self.cursor.fetchone()
+        if result:
+            return Student(*result)
+        else:
+            raise RecordNotFoundException(f'record with id={id_student} not found')
+
+    def insert(self, student):
+        statement = f"INSERT INTO students (first_name, last_name) VALUES (?, ?)"
+        self.cursor.execute(statement, (student.first_name, student.last_name))
+        try:
+            self.connection.commit()
+        except Exception as e:
+            raise DbCommitException(e.args)
+
+class MapperRegistry:
+    @staticmethod
+    def get_mapper(obj):
+        if isinstance(obj, Student):
+            return StudentMapper(db_connection)
+
+
 
 class UserFactory:
     @staticmethod
     def create_user(user_type, first_name, last_name, dob):
         try:
             if user_type == 'student':
-                return Student(first_name, last_name, dob)
+                new_student = Student(first_name, last_name, dob)
+                new_student.mark_new()
+                UnitOfWork.get_current().commit()
+                UnitOfWork.set_current(None)
+                return new_student
             else:
                 return Instructor(first_name, last_name, dob)
         except AssertionError as _e:
             print(_e)
+
 
 
 class Course(metaclass=ABCMeta):

@@ -1,0 +1,1 @@
+db_file = r"courses_portal.db"
