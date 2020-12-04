@@ -1508,3 +1508,14 @@ INFO       2020-12-02 20:48:51,043 Started Logging
 INFO       2020-12-02 20:58:59,576 Started Logging
 INFO       2020-12-02 20:59:05,203 Processed path: /students/
 INFO       2020-12-02 21:07:22,403 Started Logging
+INFO       2020-12-02 21:11:00,974 Started Logging
+INFO       2020-12-02 21:11:01,012 Started Logging
+INFO       2020-12-03 19:48:06,241 Started Logging
+INFO       2020-12-03 19:48:21,204 Processed path: /
+INFO       2020-12-03 19:48:23,010 Processed path: /students/
+INFO       2020-12-03 19:48:34,533 Created new student: First name: Polina, Last name: Kirikeza
+INFO       2020-12-03 19:48:34,533 Processed path: /students/
+INFO       2020-12-03 20:01:03,772 Started Logging
+INFO       2020-12-03 20:01:09,969 Processed path: /students/
+INFO       2020-12-03 20:01:25,699 Created new student: First name: Donald, Last name: Trump
+INFO       2020-12-03 20:01:25,699 Processed path: /students/

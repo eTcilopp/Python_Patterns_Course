@@ -162,11 +162,19 @@ class Student(User, DomainObject):
         self.dob = dob
         Student.student_id += 1
         Student.student_list.append(self)
+        StudentMapper.get_student_list()
 
 class StudentMapper:
     def __init__(self, connection):
         self.connection = connection
         self.cursor = connection.cursor()
+
+    @staticmethod
+    def get_student_list(self):
+        statement = f"SELECT id, first_name, last_name FROM students ORDER BY id"
+        self.cursor.execute(statement)
+        result = self.cursor.fetchone()
+        print(f'all students: {result}')
 
     def find_by_id(self, id_student):
         statement = f"SELECT id, first_name, last_name FROM students WHERE id=?"
@@ -178,8 +186,8 @@ class StudentMapper:
             raise RecordNotFoundException(f'record with id={id_student} not found')
 
     def insert(self, student):
-        statement = f"INSERT INTO students (first_name, last_name) VALUES (?, ?)"
-        self.cursor.execute(statement, (student.first_name, student.last_name))
+        statement = f"INSERT INTO students (first_name, last_name, dob) VALUES (?, ?, ?)"
+        self.cursor.execute(statement, (student.first_name, student.last_name, student.dob))
         try:
             self.connection.commit()
         except Exception as e:
@@ -199,6 +207,7 @@ class UserFactory:
         try:
             if user_type == 'student':
                 new_student = Student(first_name, last_name, dob)
+                UnitOfWork.new_current()
                 new_student.mark_new()
                 UnitOfWork.get_current().commit()
                 UnitOfWork.set_current(None)
