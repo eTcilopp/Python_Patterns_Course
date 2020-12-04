@@ -56,6 +56,19 @@ def set_up_database():
 
     return conn
 
+def get_student_list():
+    result = []
+    cursor = db_connection.cursor()
+    sqlite_select_query = """SELECT * from students"""
+    cursor.execute(sqlite_select_query)
+    records = cursor.fetchall()
+    print("Total rows are:  ", len(records))
+    print("Printing each row")
+    for row in records:
+        result.append(Student(row[1], row[2], row[3]))
+    cursor.close()
+    Student.student_list=result
+
 db_connection = set_up_database()
 
 class RecordNotFoundException(Exception):
@@ -162,19 +175,18 @@ class Student(User, DomainObject):
         self.dob = dob
         Student.student_id += 1
         Student.student_list.append(self)
-        StudentMapper.get_student_list()
+        # Student.student_list = StudentMapper.get_student_list
+        new_st_list = get_student_list()
+        print(f'fetched from db: {new_st_list}')
+        for row in new_st_list:
+            print("Id: ", row[0])
+            print("Name: ", row[1])
 
 class StudentMapper:
     def __init__(self, connection):
         self.connection = connection
         self.cursor = connection.cursor()
 
-    @staticmethod
-    def get_student_list(self):
-        statement = f"SELECT id, first_name, last_name FROM students ORDER BY id"
-        self.cursor.execute(statement)
-        result = self.cursor.fetchone()
-        print(f'all students: {result}')
 
     def find_by_id(self, id_student):
         statement = f"SELECT id, first_name, last_name FROM students WHERE id=?"
@@ -297,22 +309,17 @@ class CourseFactory:
 
 
 if __name__ == '__main__':
-    course1 = CourseFactory.get_course(
-        'online', 'How to get reach - fast', 'cat1')
-    print(course1.get_courseName())
-
-    course2 = CourseFactory.get_course(
-        'inclass', 'How to lose weight- fast', 'cat2')
-    print(course2.get_courseName())
-
-    student1 = UserFactory.create_user(
-        'student', 'Donald', 'Trump', '18/May/1974')
-    student2 = UserFactory.create_user(
-        'student', 'Donald', 'Trump', '18/May/1974')
-    student3 = UserFactory.create_user(
-        'student', 'Donald', 'Trump', '18/May/1974')
-    print(student1.get_name())
-    print(Student.student_list)
-
-    for student in Student.student_list:
-        print(f'Name: {student.first_name}, ID: {student.id}')
+    connection = sqlite3.connect(db_file)
+    cursor = connection.cursor()
+    print("Connected to SQLite")
+    sqlite_select_query = """SELECT * from students"""
+    cursor.execute(sqlite_select_query)
+    records = cursor.fetchall()
+    print("Total rows are:  ", len(records))
+    print("Printing each row")
+    for row in records:
+        print("Id: ", row[0])
+        print("First Name: ", row[1])
+        print("Last Name: ", row[2])
+        print("Date of Birth: ", row[3])
+    cursor.close()
