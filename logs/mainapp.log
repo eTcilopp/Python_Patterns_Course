@@ -1571,3 +1571,30 @@ INFO       2020-12-03 21:02:58,343 Created new student: First name: Alex, Last n
 INFO       2020-12-03 21:02:58,344 Processed path: /students/
 INFO       2020-12-03 21:11:58,207 Started Logging
 INFO       2020-12-03 21:13:24,591 Started Logging
+INFO       2020-12-04 14:22:37,985 Started Logging
+INFO       2020-12-04 14:56:53,424 Started Logging
+INFO       2020-12-04 14:57:04,305 Processed path: /
+INFO       2020-12-04 14:57:05,951 Processed path: /students/
+INFO       2020-12-04 14:58:41,049 Started Logging
+INFO       2020-12-04 14:58:45,513 Processed path: /students/
+INFO       2020-12-04 15:07:01,598 Started Logging
+INFO       2020-12-04 15:07:05,957 Processed path: /students/
+INFO       2020-12-04 15:07:11,965 Processed path: /student/7/
+INFO       2020-12-04 15:07:17,778 Processed path: /
+INFO       2020-12-04 15:07:19,066 Processed path: /courses/
+INFO       2020-12-04 15:07:19,850 Processed path: /students/
+INFO       2020-12-04 15:12:47,302 Started Logging
+INFO       2020-12-04 15:12:50,343 Processed path: /courses/
+INFO       2020-12-04 15:12:51,041 Processed path: /students/
+INFO       2020-12-04 15:12:54,425 Processed path: /student/4/
+INFO       2020-12-04 15:12:56,492 Processed path: /students/
+INFO       2020-12-04 15:15:13,406 Started Logging
+INFO       2020-12-04 15:15:16,989 Created new student: First name: Pyotr, Last name: Drucker
+INFO       2020-12-04 15:15:16,990 Processed path: /students/
+INFO       2020-12-04 15:18:25,831 Started Logging
+INFO       2020-12-04 15:18:53,789 Started Logging
+INFO       2020-12-04 15:18:58,879 Processed path: /about/
+INFO       2020-12-04 15:19:00,228 Processed path: /students/
+INFO       2020-12-04 15:19:55,554 Created new student: First name: Konstantin, Last name: Papondopulos
+INFO       2020-12-04 15:19:55,554 Processed path: /students/
+INFO       2020-12-04 15:19:57,475 Processed path: /student/17/

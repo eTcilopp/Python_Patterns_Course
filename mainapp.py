@@ -98,6 +98,7 @@ class Application:
                         'student', data['addstfirstname'], data['addstlastname'], data['addstdob'])
                     logging.info(
                         f'Created new student: {new_student.get_name()}')
+                    del new_student
             if 'assigning_student_id' in data and 'course' in data:
                 student = find_student(int(data['assigning_student_id']))
                 course = find_course(data['course'])

@@ -9,6 +9,7 @@ categories_list = []
 courses_list = []
 
 
+
 def create_connection(db_file):
     """ create a database connection to the SQLite database
         specified by db_file
@@ -56,20 +57,9 @@ def set_up_database():
 
     return conn
 
-def get_student_list():
-    result = []
-    cursor = db_connection.cursor()
-    sqlite_select_query = """SELECT * from students"""
-    cursor.execute(sqlite_select_query)
-    records = cursor.fetchall()
-    print("Total rows are:  ", len(records))
-    print("Printing each row")
-    for row in records:
-        result.append(Student(row[1], row[2], row[3]))
-    cursor.close()
-    Student.student_list=result
 
 db_connection = set_up_database()
+
 
 class RecordNotFoundException(Exception):
     def __init__(self, message):
@@ -165,22 +155,30 @@ class Instructor(User):
 
 
 class Student(User, DomainObject):
-    student_id = 1 #TODO - поудалять это ID  и прочие рудименты: теперь есть БД!
-    student_list = []
 
-    def __init__(self, first_name, last_name, dob):
-        self.id = Student.student_id
-        self.first_name = first_name
-        self.last_name = last_name
-        self.dob = dob
-        Student.student_id += 1
-        Student.student_list.append(self)
-        # Student.student_list = StudentMapper.get_student_list
-        new_st_list = get_student_list()
-        print(f'fetched from db: {new_st_list}')
-        for row in new_st_list:
-            print("Id: ", row[0])
-            print("Name: ", row[1])
+
+    @staticmethod
+    def student_list():
+        result = []
+        connection = sqlite3.connect(db_file)
+        cursor = connection.cursor()
+        print("Connected to SQLite")
+        sqlite_select_query = """SELECT * from students"""
+        cursor.execute(sqlite_select_query)
+        records = cursor.fetchall()
+        print("Total rows are:  ", len(records))
+        print("Printing each row")
+        for row in records:
+            result.append(Student(id=row[0], first_name=row[1], last_name=row[2], dob=row[3]))
+        cursor.close()
+        return result
+
+
+    # def __init__(self, first_name, last_name, dob):
+    def __init__(self, **kwargs):
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
 
 class StudentMapper:
     def __init__(self, connection):
@@ -218,12 +216,13 @@ class UserFactory:
     def create_user(user_type, first_name, last_name, dob):
         try:
             if user_type == 'student':
-                new_student = Student(first_name, last_name, dob)
+                new_student = Student(first_name=first_name, last_name=last_name, dob=dob)
                 UnitOfWork.new_current()
                 new_student.mark_new()
                 UnitOfWork.get_current().commit()
                 UnitOfWork.set_current(None)
                 return new_student
+                # del new_student
             else:
                 return Instructor(first_name, last_name, dob)
         except AssertionError as _e:
@@ -309,17 +308,21 @@ class CourseFactory:
 
 
 if __name__ == '__main__':
-    connection = sqlite3.connect(db_file)
-    cursor = connection.cursor()
-    print("Connected to SQLite")
-    sqlite_select_query = """SELECT * from students"""
-    cursor.execute(sqlite_select_query)
-    records = cursor.fetchall()
-    print("Total rows are:  ", len(records))
-    print("Printing each row")
-    for row in records:
-        print("Id: ", row[0])
-        print("First Name: ", row[1])
-        print("Last Name: ", row[2])
-        print("Date of Birth: ", row[3])
-    cursor.close()
+    ### Getting list of students from the DB
+    # connection = sqlite3.connect(db_file)
+    # cursor = connection.cursor()
+    # print("Connected to SQLite")
+    # sqlite_select_query = """SELECT * from students"""
+    # cursor.execute(sqlite_select_query)
+    # records = cursor.fetchall()
+    # print("Total rows are:  ", len(records))
+    # print("Printing each row")
+    # for row in records:
+    #     print("Id: ", row[0])
+    #     print("First Name: ", row[1])
+    #     print("Last Name: ", row[2])
+    #     print("Date of Birth: ", row[3])
+    # cursor.close()
+
+    for student in Student.student_list():
+        print(student.first_name)

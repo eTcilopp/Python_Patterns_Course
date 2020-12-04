@@ -43,7 +43,7 @@ def debug(cls):
 
 
 def find_student(student_id):
-    for student in Student.student_list:
+    for student in Student.student_list():
         if student.id == student_id:
             return student
     return f'Student with ID {student_id} not found'
@@ -89,7 +89,7 @@ class StudentsView:
         title = 'Student List'
         output = render('students.html',
                         title=title,
-                        object_list=Student.student_list)
+                        object_list=Student.student_list())
         return '200 OK', [bytes(output, 'utf-8')]
 
 
@@ -137,7 +137,7 @@ class CourseView:
 
     def get_available_students_list(self, enrolled_students_id_list):
         _available_students_list = []
-        for student in Student.student_list:
+        for student in Student.student_list():
             if student.id not in enrolled_students_id_list:
                 _available_students_list.append(
                     {'id': student.id, 'first_name': student.first_name, 'last_name': student.last_name})
