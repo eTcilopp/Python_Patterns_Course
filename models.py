@@ -174,7 +174,7 @@ class Student(User, DomainObject):
         return result
 
 
-    # def __init__(self, first_name, last_name, dob):
+
     def __init__(self, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
@@ -222,7 +222,6 @@ class UserFactory:
                 UnitOfWork.get_current().commit()
                 UnitOfWork.set_current(None)
                 return new_student
-                # del new_student
             else:
                 return Instructor(first_name, last_name, dob)
         except AssertionError as _e:

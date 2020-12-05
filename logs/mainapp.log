@@ -1598,3 +1598,54 @@ INFO       2020-12-04 15:19:00,228 Processed path: /students/
 INFO       2020-12-04 15:19:55,554 Created new student: First name: Konstantin, Last name: Papondopulos
 INFO       2020-12-04 15:19:55,554 Processed path: /students/
 INFO       2020-12-04 15:19:57,475 Processed path: /student/17/
+INFO       2020-12-04 15:25:33,746 Started Logging
+INFO       2020-12-04 15:25:36,533 Processed path: /students/
+INFO       2020-12-04 15:25:48,572 Processed path: /students/
+INFO       2020-12-04 15:25:58,337 Processed path: /students/
+INFO       2020-12-04 15:25:59,817 Processed path: /students/
+INFO       2020-12-04 15:26:19,386 Processed path: /courses/
+INFO       2020-12-04 15:26:20,023 Processed path: /students/
+INFO       2020-12-04 15:26:55,596 Started Logging
+INFO       2020-12-04 15:27:00,732 Processed path: /students/
+INFO       2020-12-04 15:27:15,594 Created new student: First name: Vladimir, Last name: Papondopulos
+INFO       2020-12-04 15:27:15,594 Processed path: /students/
+INFO       2020-12-04 15:27:34,987 Created new student: First name: Pyotr, Last name: Drucker
+INFO       2020-12-04 15:27:34,987 Processed path: /students/
+INFO       2020-12-04 15:27:46,093 Created new student: First name: Donald, Last name: Trump
+INFO       2020-12-04 15:27:46,093 Processed path: /students/
+INFO       2020-12-04 15:28:02,307 Processed path: /courses/
+INFO       2020-12-04 15:28:02,822 Processed path: /students/
+INFO       2020-12-04 15:28:16,948 Created new student: First name: Konstantin, Last name: Kirikeza
+INFO       2020-12-04 15:28:16,949 Processed path: /students/
+INFO       2020-12-04 15:29:08,417 Processed path: /categories/
+INFO       2020-12-04 15:29:11,437 Created new category: Jazz
+INFO       2020-12-04 15:29:11,437 Processed path: /categories/
+INFO       2020-12-04 15:29:13,298 Processed path: /courses/
+INFO       2020-12-04 15:29:16,833 Created new course: Swing
+INFO       2020-12-04 15:29:16,834 Processed path: /courses/
+INFO       2020-12-04 15:29:24,499 Processed path: /course/Swing/
+INFO       2020-12-04 15:29:28,283 Student: Trump, Donaldenrolled into the course Swing
+INFO       2020-12-04 15:29:28,284 Processed path: /course/Swing/
+INFO       2020-12-04 15:29:34,731 Student: Kirikeza, Konstantinenrolled into the course Swing
+INFO       2020-12-04 15:29:34,732 Processed path: /course/Swing/
+INFO       2020-12-04 15:29:39,488 Notification was sent to all users of a course: Swing
+INFO       2020-12-04 15:29:39,488 Processed path: /course/Swing/
+INFO       2020-12-04 16:31:55,065 Started Logging
+INFO       2020-12-04 16:31:58,280 Processed path: /categories/
+INFO       2020-12-04 16:31:59,561 Processed path: /students/
+INFO       2020-12-04 20:53:10,759 Processed path: /courses/
+INFO       2020-12-04 20:53:11,681 Processed path: /students/
+INFO       2020-12-04 20:55:37,912 Processed path: /courses/
+INFO       2020-12-04 20:55:40,204 Processed path: /students/
+INFO       2020-12-04 20:55:44,947 Processed path: /courses/
+INFO       2020-12-04 20:55:47,398 Processed path: /categories/
+INFO       2020-12-04 20:55:52,738 Created new category: Sport
+INFO       2020-12-04 20:55:52,739 Processed path: /categories/
+INFO       2020-12-04 20:55:54,441 Processed path: /courses/
+INFO       2020-12-04 20:56:01,094 Created new course: Howtokillyourenemy
+INFO       2020-12-04 20:56:01,095 Processed path: /courses/
+INFO       2020-12-04 20:56:03,736 Processed path: /courses/
+INFO       2020-12-04 20:56:04,745 Processed path: /course/Howtokillyourenemy/
+INFO       2020-12-04 20:56:10,681 Student: Papondopulos, Vladimirenrolled into the course Howtokillyourenemy
+INFO       2020-12-04 20:56:10,681 Processed path: /course/Howtokillyourenemy/
+INFO       2020-12-04 20:56:16,294 Processed path: /student/1/
