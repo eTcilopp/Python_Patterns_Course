@@ -1,6 +1,6 @@
 import logging
 from views import *
-from models import CourseFactory, UserFactory, db_connection
+from models import CourseFactory, UserFactory, db_connection, category_mapper
 
 # simple logging setup
 # to log an event do: logging.info(f'Event {variable}')
@@ -79,6 +79,7 @@ class Application:
             data = get_wsgi_input_data(environ)
             data = parse_wsgi_input_data(data)
             if 'createcategory' in data and data['createcategory'] not in categories_list:
+                category_mapper.insert(data['createcategory'])
                 categories_list.append(data['createcategory'])
                 logging.info(f'Created new category: {data["createcategory"]}')
             if 'newcoursename' in data:
@@ -103,7 +104,6 @@ class Application:
                 student = find_student(int(data['assigning_student_id']))
                 course = find_course(data['course'])
                 course.assign_student(student)
-                print(f'mainapp 97 student = {course.assignedStudents}')
                 logging.info(
                     f'Student: {student.last_name}, {student.first_name}'
                     f'enrolled into the course {course.get_courseName["Course name"]}')

@@ -1649,3 +1649,79 @@ INFO       2020-12-04 20:56:04,745 Processed path: /course/Howtokillyourenemy/
 INFO       2020-12-04 20:56:10,681 Student: Papondopulos, Vladimirenrolled into the course Howtokillyourenemy
 INFO       2020-12-04 20:56:10,681 Processed path: /course/Howtokillyourenemy/
 INFO       2020-12-04 20:56:16,294 Processed path: /student/1/
+INFO       2020-12-04 21:30:32,387 Started Logging
+INFO       2020-12-07 19:54:28,678 Started Logging
+INFO       2020-12-07 19:54:37,460 Processed path: /about/
+INFO       2020-12-07 19:54:38,683 Processed path: /categories/
+INFO       2020-12-07 19:55:34,529 Started Logging
+INFO       2020-12-07 19:55:38,120 Processed path: /categories/
+INFO       2020-12-07 19:56:32,179 Started Logging
+INFO       2020-12-07 19:56:35,974 Processed path: /categories/
+INFO       2020-12-07 19:57:48,094 Started Logging
+INFO       2020-12-07 19:58:03,182 Processed path: /courses/
+INFO       2020-12-07 19:59:42,864 Started Logging
+INFO       2020-12-07 19:59:50,273 Processed path: /categories/
+INFO       2020-12-07 20:02:54,954 Started Logging
+INFO       2020-12-07 20:03:23,841 Processed path: /
+INFO       2020-12-07 20:03:25,547 Processed path: /categories/
+INFO       2020-12-07 20:04:55,759 Started Logging
+INFO       2020-12-07 20:06:35,199 Started Logging
+INFO       2020-12-07 20:06:39,186 Created new category: Jazz
+INFO       2020-12-07 20:06:39,187 Processed path: /categories/
+INFO       2020-12-07 20:06:45,151 Processed path: /courses/
+INFO       2020-12-07 20:06:57,712 Processed path: /courses/
+INFO       2020-12-07 20:06:58,952 Processed path: /categories/
+INFO       2020-12-07 20:08:58,802 Started Logging
+INFO       2020-12-07 20:09:06,766 Processed path: /categories/
+INFO       2020-12-07 20:09:12,383 Created new category: Box
+INFO       2020-12-07 20:09:12,383 Processed path: /categories/
+INFO       2020-12-07 20:12:38,092 Started Logging
+INFO       2020-12-07 20:12:41,663 Processed path: /categories/
+INFO       2020-12-07 20:21:36,664 Started Logging
+INFO       2020-12-07 20:21:41,259 Created new category: Sex
+INFO       2020-12-07 20:21:41,260 Processed path: /categories/
+INFO       2020-12-07 20:21:43,206 Processed path: /courses/
+INFO       2020-12-07 20:21:47,243 Processed path: /about/
+INFO       2020-12-07 20:21:48,038 Processed path: /students/
+INFO       2020-12-07 20:21:54,696 Processed path: /student/1/
+INFO       2020-12-07 20:21:56,658 Processed path: /categories/
+INFO       2020-12-07 20:21:57,567 Processed path: /courses/
+INFO       2020-12-07 20:22:06,571 Started Logging
+INFO       2020-12-07 20:22:09,061 Processed path: /courses/
+INFO       2020-12-07 20:22:10,069 Processed path: /categories/
+INFO       2020-12-07 20:22:11,985 Processed path: /courses/
+INFO       2020-12-07 20:22:13,414 Processed path: /categories/
+INFO       2020-12-07 20:22:14,439 Processed path: /courses/
+INFO       2020-12-07 20:23:23,914 Processed path: /courses/
+INFO       2020-12-07 20:23:24,695 Processed path: /categories/
+INFO       2020-12-07 20:23:26,858 Processed path: /courses/
+INFO       2020-12-07 20:23:36,326 Processed path: /categories/
+INFO       2020-12-07 20:23:43,326 Created new category: Finances
+INFO       2020-12-07 20:23:43,326 Processed path: /categories/
+INFO       2020-12-07 20:23:48,497 Processed path: /courses/
+INFO       2020-12-07 20:23:51,473 Processed path: /students/
+INFO       2020-12-07 20:23:58,241 Processed path: /courses/
+INFO       2020-12-07 20:24:22,804 Processed path: /courses/
+INFO       2020-12-07 20:24:24,027 Processed path: /students/
+INFO       2020-12-07 20:24:25,978 Processed path: /courses/
+INFO       2020-12-07 20:24:31,583 Created new course: Piano
+INFO       2020-12-07 20:24:31,583 Processed path: /courses/
+INFO       2020-12-07 20:24:32,615 Processed path: /course/Piano/
+INFO       2020-12-07 20:24:35,883 Student: Papondopulos, Vladimirenrolled into the course Piano
+INFO       2020-12-07 20:24:35,884 Processed path: /course/Piano/
+INFO       2020-12-07 20:24:54,885 Student: Kirikeza, Konstantinenrolled into the course Piano
+INFO       2020-12-07 20:24:54,885 Processed path: /course/Piano/
+INFO       2020-12-07 20:24:58,210 Processed path: /categories/
+INFO       2020-12-07 20:25:31,417 Processed path: /categories/
+INFO       2020-12-07 20:25:44,332 Created new category: Travel
+INFO       2020-12-07 20:25:44,333 Processed path: /categories/
+INFO       2020-12-07 20:25:51,711 Created new category: Animals
+INFO       2020-12-07 20:25:51,711 Processed path: /categories/
+INFO       2020-12-07 20:25:53,994 Processed path: /categories/
+INFO       2020-12-07 20:25:54,766 Processed path: /courses/
+INFO       2020-12-07 20:26:06,706 Started Logging
+INFO       2020-12-07 20:26:11,218 Processed path: /
+INFO       2020-12-07 20:26:14,266 Processed path: /courses/
+INFO       2020-12-07 20:26:19,912 Processed path: /categories/
+INFO       2020-12-07 20:26:24,170 Processed path: /students/
+INFO       2020-12-07 20:26:25,622 Processed path: /student/1/

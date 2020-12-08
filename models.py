@@ -5,9 +5,8 @@ from sqlite3 import Error
 from settings import db_file
 
 
-categories_list = []
+# categories_list = [] #TODO - remove me!
 courses_list = []
-
 
 
 def create_connection(db_file):
@@ -42,16 +41,22 @@ def set_up_database():
     # creating tables
     # creating table STUDENTS
     sql_create_students_table = """CREATE TABLE IF NOT EXISTS students (
-                id integer PRIMARY KEY, 
-                first_name text NOT NULL, 
-                last_name text NOT NULL, 
+                id integer PRIMARY KEY,
+                first_name text NOT NULL,
+                last_name text NOT NULL,
                 dob text
+            ); """
+
+    sql_create_category_table = """CREATE TABLE IF NOT EXISTS categories (
+                id integer PRIMARY KEY,
+                category text NOT NULL
             ); """
 
     conn = create_connection(db_file)
 
     if conn is not None:
         create_table(conn, sql_create_students_table)
+        create_table(conn, sql_create_category_table)
     else:
         print("Error! cannot create the database connection.")
 
@@ -69,6 +74,7 @@ class RecordNotFoundException(Exception):
 class DbCommitException(Exception):
     def __init__(self, message):
         super().__init__(f'Db commit error: {message}')
+
 
 class UnitOfWork:
     """
@@ -121,7 +127,42 @@ class UnitOfWork:
         return cls.current.unit_of_work
 
 
+class Category:
+    def __init__(self, category):
+        self.category = category
 
+
+class CategoryMapper:
+    def __init__(self, connection):
+        self.connection = connection
+        self.cursor = connection.cursor()
+
+    @property
+    def get_categories_list(self):
+        result = []
+        cursor = self.cursor
+        statement = "SELECT * FROM categories"
+        cursor.execute(statement)
+        query_result = self.cursor.fetchall()
+        if query_result:
+            for row in query_result:
+                print(f'models 149 {row[1]}') #TODO - remove me!
+                result.append(row[1])
+        return result
+
+
+    def insert(self, category):
+        statement = "INSERT INTO categories (category) VALUES(?)"
+        self.cursor.execute(statement, (category,))
+        try:
+            self.connection.commit()
+        except Exception as e:
+            raise DbCommitException(e.args)
+
+
+
+category_mapper = CategoryMapper(db_connection)
+categories_list = category_mapper.get_categories_list
 
 class User(metaclass=ABCMeta):
     def get_name(self):
@@ -129,6 +170,7 @@ class User(metaclass=ABCMeta):
 
     def notify(self, course, *args, **kwargs):
         print(f'Observer {self.first_name} received:', args, kwargs)
+
 
 class DomainObject:
 
@@ -140,6 +182,7 @@ class DomainObject:
 
     def mark_removed(self):
         UnitOfWork.get_current().register_removed(self)
+
 
 class Instructor(User):
     instructor_id = 1
@@ -156,7 +199,6 @@ class Instructor(User):
 
 class Student(User, DomainObject):
 
-
     @staticmethod
     def student_list():
         result = []
@@ -169,11 +211,14 @@ class Student(User, DomainObject):
         print("Total rows are:  ", len(records))
         print("Printing each row")
         for row in records:
-            result.append(Student(id=row[0], first_name=row[1], last_name=row[2], dob=row[3]))
+            result.append(
+                Student(
+                    id=row[0],
+                    first_name=row[1],
+                    last_name=row[2],
+                    dob=row[3]))
         cursor.close()
         return result
-
-
 
     def __init__(self, **kwargs):
         for key, value in kwargs.items():
@@ -185,7 +230,6 @@ class StudentMapper:
         self.connection = connection
         self.cursor = connection.cursor()
 
-
     def find_by_id(self, id_student):
         statement = f"SELECT id, first_name, last_name FROM students WHERE id=?"
         self.cursor.execute(statement, (id_student,))
@@ -193,15 +237,21 @@ class StudentMapper:
         if result:
             return Student(*result)
         else:
-            raise RecordNotFoundException(f'record with id={id_student} not found')
+            raise RecordNotFoundException(
+                f'record with id={id_student} not found')
 
     def insert(self, student):
         statement = f"INSERT INTO students (first_name, last_name, dob) VALUES (?, ?, ?)"
-        self.cursor.execute(statement, (student.first_name, student.last_name, student.dob))
+        self.cursor.execute(
+            statement,
+            (student.first_name,
+             student.last_name,
+             student.dob))
         try:
             self.connection.commit()
         except Exception as e:
             raise DbCommitException(e.args)
+
 
 class MapperRegistry:
     @staticmethod
@@ -210,13 +260,13 @@ class MapperRegistry:
             return StudentMapper(db_connection)
 
 
-
 class UserFactory:
     @staticmethod
     def create_user(user_type, first_name, last_name, dob):
         try:
             if user_type == 'student':
-                new_student = Student(first_name=first_name, last_name=last_name, dob=dob)
+                new_student = Student(
+                    first_name=first_name, last_name=last_name, dob=dob)
                 UnitOfWork.new_current()
                 new_student.mark_new()
                 UnitOfWork.get_current().commit()
@@ -226,7 +276,6 @@ class UserFactory:
                 return Instructor(first_name, last_name, dob)
         except AssertionError as _e:
             print(_e)
-
 
 
 class Course(metaclass=ABCMeta):
@@ -303,11 +352,8 @@ class CourseFactory:
             print(_e)
 
 
-
-
-
 if __name__ == '__main__':
-    ### Getting list of students from the DB
+    # Getting list of students from the DB
     # connection = sqlite3.connect(db_file)
     # cursor = connection.cursor()
     # print("Connected to SQLite")
