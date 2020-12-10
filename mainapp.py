@@ -1,6 +1,6 @@
 import logging
 from views import *
-from models import CourseFactory, UserFactory, db_connection, category_mapper
+from models import CourseFactory, UserFactory, db_connection, category_mapper, course_mapper
 
 # simple logging setup
 # to log an event do: logging.info(f'Event {variable}')
@@ -89,6 +89,7 @@ class Application:
                     data['newcoursecategory']
                 )
                 courses_list.append(newCourse)
+                course_mapper.insert(newCourse)
                 logging.info(f'Created new course: {newCourse.courseName}')
             if 'addstfirstname' in data and 'addstlastname' in data and 'addstdob' in data:
                 if len(
@@ -121,7 +122,6 @@ class Application:
                 logging.info(
                     f'Student {student.first_name} unenrolled from the course: {data["course"]}')
 
-            print(data)  # TODO - remove
 
         view = NotFound404()
 

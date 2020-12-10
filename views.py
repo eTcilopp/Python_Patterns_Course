@@ -2,7 +2,7 @@ import re
 from datetime import datetime
 from my_framework.tempalator import render
 
-from models import categories_list, courses_list, Student
+from models import categories_list, courses_list, Student, course_mapper
 
 routes = {}
 
@@ -147,6 +147,7 @@ class CourseView:
         title = 'Course!'
         course_name = request['path'][8:-1]
         course = find_course(course_name)
+        course_mapper.get_course_by_name(course_name)
         _enrolled_students_id_list = course.get_enrolled_students_id_list
         _available_students_list=self.get_available_students_list(_enrolled_students_id_list)
         print(f'views 150 {_enrolled_students_id_list}')

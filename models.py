@@ -47,16 +47,26 @@ def set_up_database():
                 dob text
             ); """
 
-    sql_create_category_table = """CREATE TABLE IF NOT EXISTS categories (
-                id integer PRIMARY KEY,
+    sql_create_categories_table = """CREATE TABLE IF NOT EXISTS categories (
+                id integer PRIMARY KEY AUTOINCREMENT,
                 category text NOT NULL
             ); """
+
+    sql_create_course_table = """ CREATE TABLE IF NOT EXISTS courses (
+                id integer PRIMARY KEY AUTOINCREMENT,
+                category_id integer NOT NULL,
+                course_type text NOT NULL,
+                course text NOT NULL,
+                description TEXT,
+                FOREIGN KEY (category_id) REFERENCES categories(id)
+                ); """
 
     conn = create_connection(db_file)
 
     if conn is not None:
         create_table(conn, sql_create_students_table)
-        create_table(conn, sql_create_category_table)
+        create_table(conn, sql_create_categories_table)
+        create_table(conn, sql_create_course_table)
     else:
         print("Error! cannot create the database connection.")
 
@@ -303,14 +313,48 @@ class Course(metaclass=ABCMeta):
         if student not in self.assignedStudents:
             self.assignedStudents.append(student)
 
+
     def unassign_student(self, student):
         if student in self.assignedStudents:
             self.assignedStudents.remove(student)
+
 
     def notify(self, *args, **kwargs):
         for student in self.assignedStudents:
             student.notify(self, *args, kwargs)
 
+class CourseMapper:
+    def __init__(self, connection):
+        self.connection = connection
+        self.cursor = connection.cursor()
+
+    def insert(self, course):
+        statement = f"INSERT INTO courses (category_id, course_type, course) VALUES (?, ?, ?)"
+        self.cursor.execute(
+            statement,
+            (course.courseCategory,
+             course.courseType,
+             course.courseName))
+        try:
+            self.connection.commit()
+        except Exception as e:
+            raise DbCommitException(e.args)
+
+    def get_course_by_name(self, course_name):
+        statement = f"SELECT courses.id, course_type, course, description, category FROM courses INNER JOIN categories ON categories.id = courses.category_id WHERE course = ?"
+        self.cursor.execute(statement, (course_name,))
+        result = self.cursor.fetchall()
+        print('beeep')
+        for row in result:
+            print(row)
+        # if result:
+        #     print('beeeeeep')
+        #     print(result)
+        # else:
+        #     raise RecordNotFoundException(
+        #         f'record with name={course_name} not found')
+
+course_mapper = CourseMapper(db_connection)
 
 class OnlineCourse(Course):
 

@@ -4,19 +4,19 @@
 {% block content %}
     <h1> This is a page devoted to the course: {{ object_list['course'].get_courseName['Course name'] }} </h1>
 
-    <p>Assigned students:</p>
-        {% for assigned_student in object_list['course'].assignedStudents %}
-            <li> <a href="/student/{{ assigned_student.id }}">
-                {{ assigned_student.last_name }}, {{ assigned_student.first_name }}</a>
+        <p>Assigned students:</p>
+            {% for assigned_student in object_list['course'].assignedStudents %}
+                <li> <a href="/student/{{ assigned_student.id }}">
+                    {{ assigned_student.last_name }}, {{ assigned_student.first_name }}</a>
 
-                <form action="#" method="post" id="unassign_student" name="unassign_student">
-                    <input type="hidden" name="course" value="{{ object_list['course'].get_courseName['Course name'] }}">
-                    <input type="hidden" name="unassign_student_id" value="{{ assigned_student.id }}">
-                    <input type="submit" value="Remove">
-                </form>
-            </li>
-            <hr>
-        {% endfor %}
+                    <form action="#" method="post" id="unassign_student" name="unassign_student">
+                        <input type="hidden" name="course" value="{{ object_list['course'].get_courseName['Course name'] }}">
+                        <input type="hidden" name="unassign_student_id" value="{{ assigned_student.id }}">
+                        <input type="submit" value="Remove">
+                    </form>
+                </li>
+                <hr>
+            {% endfor %}
     <br>
     {% if object_list['available_students'] %}
         <p>Available students:</p>

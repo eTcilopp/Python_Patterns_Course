@@ -1725,3 +1725,259 @@ INFO       2020-12-07 20:26:14,266 Processed path: /courses/
 INFO       2020-12-07 20:26:19,912 Processed path: /categories/
 INFO       2020-12-07 20:26:24,170 Processed path: /students/
 INFO       2020-12-07 20:26:25,622 Processed path: /student/1/
+INFO       2020-12-07 21:02:35,578 Started Logging
+INFO       2020-12-07 21:02:45,129 Processed path: /
+INFO       2020-12-07 21:02:54,622 Processed path: /categories/
+INFO       2020-12-07 21:03:00,891 Processed path: /courses/
+INFO       2020-12-07 21:03:04,896 Created new course: Swing
+INFO       2020-12-07 21:03:04,896 Processed path: /courses/
+INFO       2020-12-07 21:03:05,909 Processed path: /course/Swing/
+INFO       2020-12-07 21:03:09,292 Student: Kirikeza, Konstantinenrolled into the course Swing
+INFO       2020-12-07 21:03:09,292 Processed path: /course/Swing/
+INFO       2020-12-09 19:48:09,030 Started Logging
+INFO       2020-12-09 19:48:19,215 Processed path: /
+INFO       2020-12-09 19:48:21,536 Processed path: /categories/
+INFO       2020-12-09 19:48:25,489 Created new category: Jazz
+INFO       2020-12-09 19:48:25,489 Processed path: /categories/
+INFO       2020-12-09 19:57:42,567 Started Logging
+INFO       2020-12-09 19:58:07,861 Started Logging
+INFO       2020-12-09 19:59:19,660 Started Logging
+INFO       2020-12-09 19:59:48,955 Started Logging
+INFO       2020-12-09 20:16:48,426 Started Logging
+INFO       2020-12-09 20:16:54,091 Processed path: /categories/
+INFO       2020-12-09 20:16:58,650 Created new category: Jazz
+INFO       2020-12-09 20:16:58,650 Processed path: /categories/
+INFO       2020-12-09 20:17:00,095 Processed path: /courses/
+INFO       2020-12-09 20:17:05,842 Created new course: Swing
+INFO       2020-12-09 20:17:05,843 Processed path: /courses/
+INFO       2020-12-09 20:19:30,089 Processed path: /categories/
+INFO       2020-12-09 20:19:41,150 Processed path: /courses/
+INFO       2020-12-09 20:19:45,076 Processed path: /categories/
+INFO       2020-12-09 20:20:06,160 Created new category: Box
+INFO       2020-12-09 20:20:06,160 Processed path: /categories/
+INFO       2020-12-09 20:20:08,737 Processed path: /courses/
+INFO       2020-12-09 20:20:16,975 Created new course: Swing2
+INFO       2020-12-09 20:20:16,975 Processed path: /courses/
+INFO       2020-12-09 20:20:39,620 Processed path: /course/Swing2/
+INFO       2020-12-09 20:22:03,211 Processed path: /course/Swing2/
+INFO       2020-12-09 20:22:08,010 Processed path: /students/
+INFO       2020-12-09 20:22:15,669 Created new student: First name: Peter, Last name: Drucker
+INFO       2020-12-09 20:22:15,669 Processed path: /students/
+INFO       2020-12-09 20:22:17,464 Processed path: /courses/
+INFO       2020-12-09 20:22:19,560 Processed path: /course/Swing/
+INFO       2020-12-09 20:22:22,445 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:22:22,445 Processed path: /course/Swing/
+INFO       2020-12-09 20:23:23,651 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:23:23,651 Processed path: /course/Swing/
+INFO       2020-12-09 20:23:27,524 Processed path: /courses/
+INFO       2020-12-09 20:23:28,896 Processed path: /course/Swing2/
+INFO       2020-12-09 20:23:32,076 Student: Drucker, Peterenrolled into the course Swing2
+INFO       2020-12-09 20:23:32,076 Processed path: /course/Swing2/
+INFO       2020-12-09 20:23:34,776 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:23:34,777 Processed path: /course/Swing2/
+INFO       2020-12-09 20:23:37,944 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:23:37,944 Processed path: /course/Swing2/
+INFO       2020-12-09 20:23:56,953 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:23:56,953 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:13,710 Processed path: /courses/
+INFO       2020-12-09 20:24:14,928 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:16,363 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:16,364 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:18,163 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:18,164 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:18,707 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:18,707 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:19,364 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:19,364 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:24,352 Processed path: /student/1/
+INFO       2020-12-09 20:24:30,894 Processed path: /courses/
+INFO       2020-12-09 20:24:32,590 Processed path: /students/
+INFO       2020-12-09 20:24:34,625 Processed path: /courses/
+INFO       2020-12-09 20:24:35,975 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:36,801 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:36,801 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:37,457 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:37,457 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:38,137 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:38,137 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:38,390 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:38,390 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:38,570 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:38,571 Processed path: /course/Swing2/
+INFO       2020-12-09 20:24:38,717 Student Peter unenrolled from the course: Swing2
+INFO       2020-12-09 20:24:38,717 Processed path: /course/Swing2/
+INFO       2020-12-09 20:25:48,901 Started Logging
+INFO       2020-12-09 20:25:51,612 Processed path: /courses/
+INFO       2020-12-09 20:25:54,293 Processed path: /courses/
+INFO       2020-12-09 20:25:55,633 Processed path: /categories/
+INFO       2020-12-09 20:25:56,660 Processed path: /courses/
+INFO       2020-12-09 20:26:00,203 Created new course: Swing
+INFO       2020-12-09 20:26:00,203 Processed path: /courses/
+INFO       2020-12-09 20:26:02,071 Processed path: /course/Swing/
+INFO       2020-12-09 20:26:04,002 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:26:04,002 Processed path: /course/Swing/
+INFO       2020-12-09 20:26:05,276 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:26:05,276 Processed path: /course/Swing/
+INFO       2020-12-09 20:29:03,849 Processed path: /courses/
+INFO       2020-12-09 20:29:05,474 Processed path: /course/Swing/
+INFO       2020-12-09 20:29:06,462 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:29:06,463 Processed path: /course/Swing/
+INFO       2020-12-09 20:29:07,675 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:29:07,675 Processed path: /course/Swing/
+INFO       2020-12-09 20:29:08,460 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:29:08,461 Processed path: /course/Swing/
+INFO       2020-12-09 20:32:45,276 Processed path: /students/
+INFO       2020-12-09 20:37:11,023 Processed path: /courses/
+INFO       2020-12-09 20:37:12,046 Processed path: /course/Swing/
+INFO       2020-12-09 20:37:17,463 Processed path: /student/1/
+INFO       2020-12-09 20:37:25,572 Processed path: /courses/
+INFO       2020-12-09 20:37:26,808 Processed path: /students/
+INFO       2020-12-09 20:37:36,894 Created new student: First name: Helen, Last name: Meroon
+INFO       2020-12-09 20:37:36,894 Processed path: /students/
+INFO       2020-12-09 20:37:40,719 Processed path: /courses/
+INFO       2020-12-09 20:37:42,555 Processed path: /course/Swing/
+INFO       2020-12-09 20:37:48,069 Student: Meroon, Helenenrolled into the course Swing
+INFO       2020-12-09 20:37:48,069 Processed path: /course/Swing/
+INFO       2020-12-09 20:37:51,947 Processed path: /student/2/
+INFO       2020-12-09 20:37:55,232 Student Helen unenrolled from the course: Swing
+INFO       2020-12-09 20:37:55,233 Processed path: /course/Swing/
+INFO       2020-12-09 20:37:59,367 Student Helen unenrolled from the course: Swing
+INFO       2020-12-09 20:37:59,368 Processed path: /course/Swing/
+INFO       2020-12-09 20:38:00,083 Student Helen unenrolled from the course: Swing
+INFO       2020-12-09 20:38:00,084 Processed path: /course/Swing/
+INFO       2020-12-09 20:38:00,661 Student Helen unenrolled from the course: Swing
+INFO       2020-12-09 20:38:00,661 Processed path: /course/Swing/
+INFO       2020-12-09 20:38:01,276 Student Helen unenrolled from the course: Swing
+INFO       2020-12-09 20:38:01,276 Processed path: /course/Swing/
+INFO       2020-12-09 20:41:11,763 Started Logging
+INFO       2020-12-09 20:41:15,566 Processed path: /students/
+INFO       2020-12-09 20:41:16,798 Processed path: /courses/
+INFO       2020-12-09 20:41:19,869 Created new course: Swing
+INFO       2020-12-09 20:41:19,869 Processed path: /courses/
+INFO       2020-12-09 20:41:28,277 Processed path: /course/Swing/
+INFO       2020-12-09 20:41:32,095 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:41:32,096 Processed path: /course/Swing/
+INFO       2020-12-09 20:41:33,209 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:41:33,209 Processed path: /course/Swing/
+INFO       2020-12-09 20:42:12,316 Started Logging
+INFO       2020-12-09 20:42:14,701 Processed path: /courses/
+INFO       2020-12-09 20:42:16,575 Created new course: Swing
+INFO       2020-12-09 20:42:16,575 Processed path: /courses/
+INFO       2020-12-09 20:42:17,611 Processed path: /course/Swing/
+INFO       2020-12-09 20:42:19,111 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:42:19,111 Processed path: /course/Swing/
+INFO       2020-12-09 20:42:20,683 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:42:20,683 Processed path: /course/Swing/
+INFO       2020-12-09 20:43:12,689 Started Logging
+INFO       2020-12-09 20:43:14,916 Processed path: /courses/
+INFO       2020-12-09 20:43:17,788 Created new course: Swing
+INFO       2020-12-09 20:43:17,788 Processed path: /courses/
+INFO       2020-12-09 20:43:18,666 Processed path: /course/Swing/
+INFO       2020-12-09 20:43:20,035 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:43:20,035 Processed path: /course/Swing/
+INFO       2020-12-09 20:43:22,030 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:43:22,031 Processed path: /course/Swing/
+INFO       2020-12-09 20:44:16,339 Started Logging
+INFO       2020-12-09 20:44:18,428 Processed path: /courses/
+INFO       2020-12-09 20:44:20,302 Created new course: Swing
+INFO       2020-12-09 20:44:20,302 Processed path: /courses/
+INFO       2020-12-09 20:44:21,621 Processed path: /course/Swing/
+INFO       2020-12-09 20:44:22,912 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:44:22,912 Processed path: /course/Swing/
+INFO       2020-12-09 20:44:23,708 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:44:23,709 Processed path: /course/Swing/
+INFO       2020-12-09 20:44:43,107 Processed path: /courses/
+INFO       2020-12-09 20:44:43,928 Processed path: /course/Swing/
+INFO       2020-12-09 20:46:10,024 Started Logging
+INFO       2020-12-09 20:46:11,486 Processed path: /courses/
+INFO       2020-12-09 20:46:15,273 Created new course: Swing
+INFO       2020-12-09 20:46:15,274 Processed path: /courses/
+INFO       2020-12-09 20:46:16,477 Processed path: /course/Swing/
+INFO       2020-12-09 20:46:17,985 Student: Drucker, Peterenrolled into the course Swing
+INFO       2020-12-09 20:46:17,985 Processed path: /course/Swing/
+INFO       2020-12-09 20:46:19,346 Student Peter unenrolled from the course: Swing
+INFO       2020-12-09 20:46:19,347 Processed path: /course/Swing/
+INFO       2020-12-09 20:48:05,458 Started Logging
+INFO       2020-12-09 20:48:07,457 Processed path: /courses/
+INFO       2020-12-09 20:48:09,853 Created new course: Swing
+INFO       2020-12-09 20:48:09,853 Processed path: /courses/
+INFO       2020-12-09 20:48:11,000 Processed path: /course/Swing/
+INFO       2020-12-09 21:08:22,238 Started Logging
+INFO       2020-12-09 21:08:26,406 Processed path: /courses/
+INFO       2020-12-09 21:08:31,072 Created new course: Swing
+INFO       2020-12-09 21:08:31,073 Processed path: /courses/
+INFO       2020-12-09 21:08:32,478 Processed path: /course/Swing/
+INFO       2020-12-09 21:14:22,485 Started Logging
+INFO       2020-12-09 21:14:27,223 Processed path: /courses/
+INFO       2020-12-09 21:14:29,703 Created new course: Swing
+INFO       2020-12-09 21:14:29,703 Processed path: /courses/
+INFO       2020-12-09 21:14:31,914 Processed path: /course/Swing/
+INFO       2020-12-09 21:16:42,339 Started Logging
+INFO       2020-12-09 21:16:45,598 Processed path: /courses/
+INFO       2020-12-09 21:16:48,176 Created new course: Swing
+INFO       2020-12-09 21:16:48,176 Processed path: /courses/
+INFO       2020-12-09 21:16:50,236 Processed path: /course/Swing/
+INFO       2020-12-09 21:17:41,142 Started Logging
+INFO       2020-12-09 21:17:46,344 Created new course: Swing
+INFO       2020-12-09 21:17:46,345 Processed path: /courses/
+INFO       2020-12-09 21:17:47,639 Processed path: /course/Swing/
+INFO       2020-12-09 21:18:22,132 Started Logging
+INFO       2020-12-09 21:18:24,757 Processed path: /courses/
+INFO       2020-12-09 21:18:27,440 Created new course: Swing
+INFO       2020-12-09 21:18:27,441 Processed path: /courses/
+INFO       2020-12-09 21:18:32,286 Created new course: Karate
+INFO       2020-12-09 21:18:32,286 Processed path: /courses/
+INFO       2020-12-09 21:18:33,191 Processed path: /course/Karate/
+INFO       2020-12-09 21:24:37,185 Started Logging
+INFO       2020-12-09 21:24:43,623 Processed path: /courses/
+INFO       2020-12-09 21:24:46,868 Created new course: Karate
+INFO       2020-12-09 21:24:46,868 Processed path: /courses/
+INFO       2020-12-09 21:24:48,111 Processed path: /course/Karate/
+INFO       2020-12-09 21:25:34,643 Started Logging
+INFO       2020-12-09 21:25:39,790 Created new course: Karate
+INFO       2020-12-09 21:25:39,790 Processed path: /courses/
+INFO       2020-12-09 21:25:40,995 Processed path: /course/Karate/
+INFO       2020-12-09 21:26:34,159 Started Logging
+INFO       2020-12-09 21:26:39,828 Processed path: /categories/
+INFO       2020-12-09 21:26:42,570 Created new category: Jazz
+INFO       2020-12-09 21:26:42,571 Processed path: /categories/
+INFO       2020-12-09 21:26:44,701 Processed path: /courses/
+INFO       2020-12-09 21:27:39,058 Started Logging
+INFO       2020-12-09 21:27:43,542 Processed path: /categories/
+INFO       2020-12-09 21:27:47,023 Created new category: Jazz
+INFO       2020-12-09 21:27:47,023 Processed path: /categories/
+INFO       2020-12-09 21:27:48,589 Processed path: /courses/
+INFO       2020-12-09 21:27:50,908 Created new course: Swing
+INFO       2020-12-09 21:27:50,909 Processed path: /courses/
+INFO       2020-12-09 21:27:52,210 Processed path: /course/Swing/
+INFO       2020-12-09 21:28:43,935 Processed path: /course/Swing/
+INFO       2020-12-09 21:28:50,049 Started Logging
+INFO       2020-12-09 21:28:53,458 Processed path: /course/Swing/
+INFO       2020-12-09 21:29:07,427 Processed path: /about/
+INFO       2020-12-09 21:29:08,075 Processed path: /categories/
+INFO       2020-12-09 21:29:09,947 Processed path: /courses/
+INFO       2020-12-09 21:29:13,326 Created new course: Swing
+INFO       2020-12-09 21:29:13,326 Processed path: /courses/
+INFO       2020-12-09 21:29:14,529 Processed path: /course/Swing/
+INFO       2020-12-09 21:29:46,903 Started Logging
+INFO       2020-12-09 21:29:50,565 Processed path: /categories/
+INFO       2020-12-09 21:29:51,145 Processed path: /courses/
+INFO       2020-12-09 21:29:53,036 Created new course: Swing
+INFO       2020-12-09 21:29:53,036 Processed path: /courses/
+INFO       2020-12-09 21:29:54,338 Processed path: /course/Swing/
+INFO       2020-12-09 21:36:50,549 Started Logging
+INFO       2020-12-09 21:36:55,842 Processed path: /courses/
+INFO       2020-12-09 21:36:59,789 Created new course: Swing2
+INFO       2020-12-09 21:36:59,789 Processed path: /courses/
+INFO       2020-12-09 21:37:01,103 Processed path: /course/Swing2/
+INFO       2020-12-09 21:45:10,093 Started Logging
+INFO       2020-12-09 21:45:15,386 Processed path: /courses/
+INFO       2020-12-09 21:45:19,548 Created new course: Swing
+INFO       2020-12-09 21:45:19,548 Processed path: /courses/
+INFO       2020-12-09 21:45:20,774 Processed path: /course/Swing/
+INFO       2020-12-09 21:45:54,139 Started Logging
+INFO       2020-12-09 21:45:56,957 Processed path: /categories/
+INFO       2020-12-09 21:45:57,455 Processed path: /courses/
+INFO       2020-12-09 21:46:00,220 Created new course: Swing2
+INFO       2020-12-09 21:46:00,221 Processed path: /courses/
+INFO       2020-12-09 21:46:01,334 Processed path: /course/Swing2/
